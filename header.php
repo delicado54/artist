@@ -25,6 +25,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />			
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
 	<link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/img/apple-touch-icon.png">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Raleway:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('title'); ?> RSS Feed" href="/feed/" />
     

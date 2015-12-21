@@ -81,10 +81,10 @@ a, a:visited{   color: #000; text-decoration: underline; }
 /* headings */
 
 h1, h2, h3, h4, h5{  font-weight: normal; margin: 0; color: #2b002d; }
-h1{ font-size: 2em;   }
-h2{ font-size: 1.4em; }
-h3{ font-size: 1.3em; }
-h4{ font-size: 1.2em; }
+h1{ font-size: 1.5em;   }
+h2{ font-size: 1.2em; }
+h3{ font-size: 1.1em; }
+h4{ font-size: 1em; }
 
 /* -------------------- WIDTHS -------------------- */
 
@@ -149,7 +149,9 @@ position: relative;
 
 /* Footer */
 
-#footer-bottom {padding-top:40px;}
+#footer-bottom {padding-top:40px;font-size:.8em;}
+#socialmedia {float:left; padding-top:20px;}
+.newsletter {float:right; padding-top:20px;}
 /* Grid  */
 #grid {clear:both; list-style:none; margin:0; padding:20px 0;}
 #grid li { display:inline;}
@@ -212,7 +214,9 @@ transition: opacity .2s;
 .icon-youtube:before {
   content: "\79";
 }
-
+.icon-search:before {
+    content: "\e900";
+}
 
 
 /* -------------------- CLASSES -------------------- */
@@ -248,6 +252,7 @@ div.sidebar {width:39%; float:right;}
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
   
   img{   max-width: 100%; }
+  #grid li a { width:33%;}
   
 }
 
@@ -260,19 +265,25 @@ div.sidebar {width:39%; float:right;}
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
     
   img{   max-width: 100%; }
+  h2.strap {line-height:1.4em;}
+  #grid li a { width:50%;}
+  .newsletter {float:none; clear:both;}
 
 }
 
 /* Mobile Portrait */
 @media all and (min-width: 0px) and (max-width: 479px) { 
 
-  header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 300px;} 
+  header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 95%; min-width:300px;} 
   section{   margin: 0 !important; }
   section{  margin-bottom: 20px !important; }
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
-  
+    #grid li a { width:100%;}
+
   img{   max-width: 100%; }
-  
+    .newsletter {float:none; clear:both;}
+  h2.strap {line-height:1.4em;}
+
 }
 
 /* -------------------- PSEUDO -------------------- */

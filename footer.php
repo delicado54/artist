@@ -4,7 +4,7 @@
                 <p>&copy; <?php bloginfo("title"); ?>, <?php echo date('Y'); ?></p>
 
 
-            <p>Subscribe to our quarterly newsletter </span><a href="http://eepurl.com/GLqBP" target="_blank">here</a></p>
+            <div class="newsletter"><p>Subscribe to our quarterly newsletter </span><a href="http://eepurl.com/GLqBP" target="_blank">here</a></p></div>
         <div id="socialmedia">
           <a class="icon-twitter" href="https://twitter.com/frenchmotters">&nbsp;</a>
           <a class="icon-facebook" href="https://www.facebook.com/pages/French-Mottershead/435913769840584">&nbsp;</a>

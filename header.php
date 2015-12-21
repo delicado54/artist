@@ -38,6 +38,11 @@
         <header class="clearfix">
             <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><img src="<?php bloginfo('template_url'); ?>/img/header_logo.png" alt="<?php bloginfo('title'); ?>" /></a>
             <h2 class="strap"><?php bloginfo('description'); ?></h2>
+             <div id="search-container" class="search-box-wrapper hide">
+                    <div class="search-box">
+                    <?php get_search_form(); ?>
+                    </div>
+            </div> 
             <nav>
                 <!-- Main page nav -->
                 <ul>
@@ -48,11 +53,6 @@
                     );
                     wp_list_pages($nav_args);
                     ?>
-                </ul>
-                <div id="search-container" class="search-box-wrapper hide">
-                    <div class="search-box">
-                    <?php get_search_form(); ?>
-                    </div>
-                </div>                
+                </ul>                        
             </nav>
         </header>

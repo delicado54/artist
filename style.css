@@ -127,6 +127,7 @@ section:first-child{ margin-left: 0;  }
 
 /* header */
 header {margin-top:20px;}
+#search-container {position:relative;top:70px;}
 #header-logo { float:left; margin-right:20px; margin-bottom:10px; }
 h2.strap {line-height:55px; float:left; font-size:1em;}
 nav {clear:both;}
@@ -249,6 +250,8 @@ div.sidebar {width:39%; float:right;}
 
   header, section.s1, .container, footer, #body-wrapper{  width: 748px; clear: both; margin: 0 auto;  }
   section.s2, section.s3, section.s4{  width: 364px; }
+  #search-container {position:relative;top:40px;}
+
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
   
   img{   max-width: 100%; }
@@ -258,7 +261,7 @@ div.sidebar {width:39%; float:right;}
 
 /* Mobile Landscape */
 @media all and (min-width: 480px) and (max-width: 748px) { 
-    
+  #search-container { position:absolute; top:30px; right:20px;}
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 450px;} 
   section{   margin: 0 !important; }
   section{  margin-bottom: 20px !important; }
@@ -268,12 +271,13 @@ div.sidebar {width:39%; float:right;}
   h2.strap {line-height:1.4em;}
   #grid li a { width:50%;}
   .newsletter {float:none; clear:both;}
+  #s {max-width:110px;}
 
 }
 
 /* Mobile Portrait */
 @media all and (min-width: 0px) and (max-width: 479px) { 
-
+  #search-container {display:none;}
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 95%; min-width:300px;} 
   section{   margin: 0 !important; }
   section{  margin-bottom: 20px !important; }
@@ -281,7 +285,6 @@ div.sidebar {width:39%; float:right;}
     #grid li a { width:100%;}
 header nav li a , #filter li a{font-size:1.05em;}
 
-#search_container {float:none; clear:both;}
   img{   max-width: 100%; }
     .newsletter {float:none; clear:both;}
   h2.strap {line-height:1.4em;}

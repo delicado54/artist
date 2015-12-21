@@ -284,7 +284,7 @@ div.sidebar {width:39%; float:right;}
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
     #grid li a { width:100%;}
 header nav li a , #filter li a{font-size:1.05em;}
-
+div.thumb-holder {height:auto;}
   img{   max-width: 100%; }
     .newsletter {float:none; clear:both;}
   h2.strap {line-height:1.4em;}

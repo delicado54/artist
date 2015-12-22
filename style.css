@@ -69,7 +69,7 @@ turq 348085
 /* -------------------- ELEMENT DEFAULTS -------------------- */
 
 body{
-  font-family: Merriweather, Arial, sans-serif;
+  font-family:'Open Sans', Average,Karla, Merriweather, Arial, sans-serif;
   font-size: 16px;
   background: #fff;
   color: #000;

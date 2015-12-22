@@ -153,11 +153,12 @@ position: relative;
 h1 {padding-bottom:20px;}
 .inner-wrapper > div, .inner-wrapper > div img {max-width:100%; height:auto;}
 .wp-caption-text {font-size:.7em;}
+ul.bxslider {padding-left:0;}
 /* Footer */
 
 #footer-bottom {padding-top:40px;font-size:.8em;}
-#socialmedia {float:left; padding-top:20px;}
-.newsletter {float:right; padding-top:20px;}
+#socialmedia {float:left; padding:20px 0;}
+.newsletter {float:right; padding:20px 0;}
 /* Grid  */
 #grid {clear:both; list-style:none; margin:0; padding:0 0 20px 0;}
 #grid li { display:inline;}
@@ -247,6 +248,8 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 article.work {width:60%; float:left;}
 div.sidebar {width:39%; float:right;}
 .inner-wrapper { padding-right:20px;}
+article.nosidebar {width:100%; float:none;}
+article.nosidebar .inner-wrapper {padding:0;}
 
 /* -------------------- MEDIA QUERIES -------------------- */
 
@@ -255,6 +258,7 @@ div.sidebar {width:39%; float:right;}
 
   header, section.s1, .container, footer, #body-wrapper{  width: 748px; clear: both; margin: 0 auto;  }
   section.s2, section.s3, section.s4{  width: 364px; }
+  header {margin-top:20px;}
   #search-container {position:relative;top:40px;}
 
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }

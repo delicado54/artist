@@ -2,7 +2,7 @@
 get_header(); 
 if ( have_posts() ): the_post();
 
-
+$sidebarlinks = get_post_meta($post->ID,'sidebarlinks', true);
 
 ?>
 <ul id="filter" class="subnav">
@@ -22,21 +22,21 @@ if ( have_posts() ): the_post();
        
             <h1><em><?php the_title(); ?></em></h1>
 
-        <article class="work" id="post-<?php the_id(); ?>">
+        <article class="work<?php if($sidebarlinks ==''):?> nosidebar<?php endif ?>" id="post-<?php the_id(); ?>">
         	<div class="inner-wrapper">
 
             <?php the_content(); ?>
 			</div>     
         </article>
+        <?php if($sidebarlinks !=''):?>
         <div class="sidebar">
         <?php        
         // output the sidebar links
         
-		$sidebarlinks = get_post_meta($post->ID,'sidebarlinks', true);
 		echo apply_filters('the_content',$sidebarlinks);
-        ?>
-        
+        ?>        
         </div>
+    <?php endif; ?>
         
   
 </div>

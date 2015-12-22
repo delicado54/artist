@@ -1,9 +1,6 @@
 <?php
-
 include_once 'metaboxes/setup.php';
-
 function disable_wp_emojicons() {
-
   // all actions related to emojis
   remove_action( 'admin_print_styles', 'print_emoji_styles' );
   remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -12,17 +9,14 @@ function disable_wp_emojicons() {
   remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
   remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
   remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
-
   // filter to remove TinyMCE emojis
   add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
 }
 add_action( 'init', 'disable_wp_emojicons' );
-
 add_filter('embed_oembed_html', 'my_embed_oembed_html', 99, 4);
 function my_embed_oembed_html($html, $url, $attr, $post_id) {
   return '<div class="video-container">' . $html . '</div>';
 }
-
 
 function disable_emojicons_tinymce( $plugins ) {
   if ( is_array( $plugins ) ) {
@@ -32,9 +26,7 @@ function disable_emojicons_tinymce( $plugins ) {
   }
 }
 
-
 /* add custom post types to search */
-
 function filter_search($query) {
     if ($query->is_search) {
   $query->set('post_type', array('post', 'works', 'page'));
@@ -42,12 +34,9 @@ function filter_search($query) {
     return $query;
 };
 add_filter('pre_get_posts', 'filter_search');
-
 /* ---- Custom Post Types and Taxonomies ---- */
 
-
 function register_post_types(){
-
   register_post_type( 'works',
   	array(
       'labels' => array(
@@ -59,7 +48,6 @@ function register_post_types(){
     	'supports' => array('title', 'editor', 'thumbnail') 
   	)
   );
-
   register_post_type( 'publications',
     array(
       'labels' => array(
@@ -71,7 +59,6 @@ function register_post_types(){
       'supports' => array('title', 'editor', 'thumbnail') 
     )
   );  
-
   register_post_type( 'publications',
     array(
       'labels' => array(
@@ -94,11 +81,8 @@ register_post_type( 'articles',
       'supports' => array('title', 'editor', 'thumbnail') 
     )
   );      
-
 }
-
 function register_taxonomies(){
-
   register_taxonomy('work-type', array('works'),
     array(
       'labels' => array(
@@ -111,21 +95,16 @@ function register_taxonomies(){
     )
   );
 }
-
 add_action( 'init', 'register_post_types', 0 );
 add_action( 'init', 'register_taxonomies', 0 );
 
-
 /* ---- Post Thumbnails ---- */
-
 
 add_theme_support('post-thumbnails', array('post','articles','works','publications'));
 set_post_thumbnail_size( 208, 150, false );
 add_image_size("artist-thumb",  208, 150, false);
 
-
 /* ---- Sidebar ---- */
-
 /*
 if ( function_exists('register_sidebar') ){
 	register_sidebar(array(
@@ -137,11 +116,8 @@ if ( function_exists('register_sidebar') ){
 	));
 }
 */
-
 /* ---- Scripts ---- */
-
 /* Scripts */
-
 function enqueue_scripts(){
     
     wp_enqueue_script(
@@ -174,26 +150,122 @@ function enqueue_scripts(){
     );
 }
 
-
 add_action('init', 'enqueue_scripts');
-
 /* ---- Other ---- */
-
 //add excerpt field into pages
 add_post_type_support( 'page', 'excerpt' );
-
 //add custom menu support 
 add_action('init', 'register_custom_menu');
-
 function register_custom_menu() {
   register_nav_menu('custom_menu', __('Custom Menu'));
 }
-
 //replacement text for 'read more' after excerpts
 function new_excerpt_more($more) {
   global $post;
 	return ' <a class="moretag" href="'. get_permalink($post->ID) . '">Read more</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+add_filter('use_default_gallery_style', '__return_false');
+add_filter('post_gallery', 'wpq_wp_gallery', 1, 2);
+function wpq_wp_gallery($empty, $attr){
+   $post = get_post();
+   
+   if( ! empty( $attr['ids'] ) ) {
+      if( empty( $attr['orderby'] ) ) $attr['orderby'] = 'post__in';
+      $attr['include'] = $attr['ids'];
+   }
+   
+   if( isset( $attr['orderby'] ) ) {
+      $attr['orderby'] = sanitize_sql_orderby( $attr['orderby'] );
+      if( !$attr['orderby'] ) unset( $attr['orderby'] );
+   }
+   
+   extract(shortcode_atts(array(
+      'order' => 'ASC',
+      'orderby' => 'menu_order ID',
+      'id' => $post ? $post->ID : 0,
+      'captiontag' => '',
+      'include' => '',
+      'exclude' => '',
+      'columns' => '1'
+   ), $attr, 'gallery'));
+   
+   $id = intval($id);
+  
+   if( !empty($include) ) {
+      $_attachments = get_posts( array(
+         'include' => $include,
+         'post_status' => 'inherit',
+         'post_type' => 'attachment',
+         'post_mime_type' => 'image',
+         'order' => $order,
+         'orderby' => $orderby
+      ) );
+      $attachments = array();
+      foreach ( $_attachments as $key => $val ) {
+         $attachments[$val->ID] = $_attachments[$key];
+      }
+   }
+   elseif( !empty($exclude) ) {
+      $attachments = get_children( array(
+         'post_parent' => $id,
+         'exclude' => $exclude,
+         'post_status' => 'inherit',
+         'post_type' => 'attachment',
+         'post_mime_type' => 'image',
+         'order' => $order,
+         'orderby' => $orderby
+      ) );
+   }
+   else {
+      $attachments = get_children( array(
+         'post_parent' => $id,
+         'post_status' => 'inherit',
+         'post_type' => 'attachment',
+         'post_mime_type' => 'image',
+         'order' => $order,
+         'orderby' => $orderby
+      ) );
+   }
+   
+   if( empty($attachments) ) 
+      return '';
+    
+   if( is_feed() ) {
+      $output = "\n";
+      foreach ( $attachments as $att_id => $attachment )
+         $output .= wp_get_attachment_link($att_id, $size, true) . "\n";
+      return $output;
+   }
+   $output = '';
+   $output .= '<ul class="bxslider">';
+   foreach ( $attachments as $att_id => $attachment ) {
+      $output .= '<li><img src="'.wp_get_attachment_url( $att_id ).'" title="'.esc_attr($attachment->post_title).'" /><p class="post-caption">'.$attachment->post_excerpt.'</p></li>'; 
+   }
+   $output .= '</ul>';
+   return $output;
+}
+
+add_action('wp_enqueue_scripts', 'wpq_scripts_bxslider' , 999);
+function wpq_scripts_bxslider() {
+   wp_enqueue_style('bxslider-css', 'http://bxslider.com/lib/jquery.bxslider.css', '', '4.1.2', true);
+   wp_enqueue_script('bxslider-js', 'http://bxslider.com/lib/jquery.bxslider.js', array('jquery'), '4.1.2', true);
+}
+
+add_filter('wp_footer', 'wpq_footer_bxslider', 9999);
+function wpq_footer_bxslider() {
+   ?>
+   <script type="text/javascript">
+   jQuery(document).ready(function($){
+      $('.bxslider').bxSlider({
+         mode: 'fade',
+         auto: true,
+         pager: false
+      });   
+   });//jQuery(document)
+   </script>
+   <?php
+}
 
 ?>

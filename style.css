@@ -283,7 +283,8 @@ div.sidebar {width:39%; float:right;}
   section{  margin-bottom: 20px !important; }
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
     #grid li a { width:100%;}
-header nav li a , #filter li a{font-size:1.05em;}
+header nav li a {font-size:1.05em;}
+ #filter li a {font-size:0.8em}
 div.thumb-holder {height:auto;}
   img{   max-width: 100%; }
     .newsletter {float:none; clear:both;}

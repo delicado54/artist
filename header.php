@@ -38,7 +38,14 @@
     //print_r($post);
     if($post->post_type =='works'):
     $terms = wp_get_post_terms($post->ID, 'work-type');
-        if(!in_array('current',$terms)):
+        $current = false;
+        foreach($terms as $term):
+            if(in_array('current',$term)):
+                $current = true;
+                break;
+            endif;
+        endforeach;
+        if($current):
             echo ' archiveitem';
         endif;
     endif; 

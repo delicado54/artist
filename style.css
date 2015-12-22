@@ -250,8 +250,8 @@ div.sidebar {width:39%; float:right;}
 .inner-wrapper { padding-right:20px;}
 article.nosidebar {width:100%; float:none;}
 article.nosidebar .inner-wrapper {padding:0;}
-.bx-prev {position:absolute; left:0px; top:-20px;z-index:2;}
-.bx-next {position:absolute; right:0px;top:-20px;z-index:2;}
+.bx-prev {position:absolute; left:0px; top:-30px;z-index:2;}
+.bx-next {position:absolute; right:0px;top:-30px;z-index:2;}
 .bx-viewport {z-index:0;}
 .bx-controls {height:30px; position:relative;}
 .bx-controls a {text-decoration:none; font-size:1.3em;}

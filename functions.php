@@ -261,6 +261,7 @@ function wpq_footer_bxslider() {
       $('.bxslider').bxSlider({
          mode: 'fade',
          auto: true,
+         pause: 6500,
          nextText: '&gt;',
          prevText: '&lt;',
          pager: false

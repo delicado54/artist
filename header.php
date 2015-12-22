@@ -40,7 +40,7 @@
     $terms = wp_get_post_terms($post->ID, 'work-type');
         $current = false;
         foreach($terms as $term):
-            if(in_array('current',$term)):
+            if($term->slug=='current'):
                 $current = true;
                 break;
             endif;

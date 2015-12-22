@@ -241,7 +241,7 @@ function wpq_wp_gallery($empty, $attr){
    $output = '';
    $output .= '<ul class="bxslider">';
    foreach ( $attachments as $att_id => $attachment ) {
-      $output .= '<li><img src="'.wp_get_attachment_url( $att_id ).'" title="'.esc_attr($attachment->post_title).'" /><p class="post-caption">'.$attachment->post_excerpt.'</p></li>'; 
+      $output .= '<li><img src="'.wp_get_attachment_url( $att_id ).'" title="'.esc_attr($attachment->post_title).'" /><p class="image-caption">'.$attachment->post_excerpt.'</p></li>'; 
    }
    $output .= '</ul>';
    return $output;
@@ -261,6 +261,8 @@ function wpq_footer_bxslider() {
       $('.bxslider').bxSlider({
          mode: 'fade',
          auto: true,
+         nextText: '&gt;',
+         prevText: '&lt;',
          pager: false
       });   
    });//jQuery(document)

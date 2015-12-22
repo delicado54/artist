@@ -250,7 +250,12 @@ div.sidebar {width:39%; float:right;}
 .inner-wrapper { padding-right:20px;}
 article.nosidebar {width:100%; float:none;}
 article.nosidebar .inner-wrapper {padding:0;}
-
+.bx-prev {position:absolute; left:0px; top:-17px;}
+.bx-next {position:absolute; right:0px;top:-17px;}
+.bx-controls {height:30px; position:relative;}
+.bx-controls a {text-decoration:none; font-size:1.3em;}
+.image-caption {padding: 0 30px; font-style:italics; font-size:.9em; margin-top:5px;}
+.bxslider {list-style:none;}
 /* -------------------- MEDIA QUERIES -------------------- */
 
 /* 748px  */
@@ -269,7 +274,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 }
 
 @media all and (min-width: 749px) and (max-width: 768px) { 
-  header {margin-top:10px; }   
+  header {margin-top:12px; }  
 
   }
 

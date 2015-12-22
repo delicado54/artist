@@ -47,6 +47,8 @@
         endforeach;
         if(!$current):
             echo ' archiveitem';
+        else:
+            echo ' currentitem';
         endif;
     endif; 
     ?>" id="body-container">

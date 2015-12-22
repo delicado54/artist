@@ -281,6 +281,8 @@ article.nosidebar .inner-wrapper {padding:0;}
 
 /* Mobile Landscape */
 @media all and (min-width: 480px) and (max-width: 748px) { 
+  .sidebar {width:100%; clear:both; padding-top:40px;}
+  article.work {width:100%;}
   #search-container { position:absolute; top:30px; right:20px;}
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 450px;} 
   header {margin-top:10px; }   

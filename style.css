@@ -258,7 +258,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 
   header, section.s1, .container, footer, #body-wrapper{  width: 748px; clear: both; margin: 0 auto;  }
   section.s2, section.s3, section.s4{  width: 364px; }
-  header {margin-top:20px;}
+  header {margin-top:20px; !important} 
   #search-container {position:relative;top:40px;}
 
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }

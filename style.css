@@ -255,7 +255,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 .bx-viewport {z-index:0;}
 .bx-controls {height:30px; position:relative;}
 .bx-controls a {text-decoration:none; font-size:1.3em;}
-.image-caption {padding: 0 30px; font-style:italic; font-size:.9em; line-height:.9em; margin-top:8px;}
+.image-caption {min-height:30px;padding: 0 30px; font-style:italic; font-size:.9em; line-height:.9em; margin-top:8px;}
 .bxslider {list-style:none;}
 /* -------------------- MEDIA QUERIES -------------------- */
 

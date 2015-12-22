@@ -154,6 +154,10 @@ h1 {padding-bottom:20px;}
 .inner-wrapper > div, .inner-wrapper > div img {max-width:100%; height:auto;}
 .wp-caption-text {font-size:.7em;}
 ul.bxslider {padding-left:0;}
+
+/* Home Page */
+ul.news {list-style:none; padding:0; font-size:.9em; width:50%;}
+ul.news li {display:block; margin-bottom:20px;}
 /* Footer */
 
 #footer-bottom {padding-top:40px;font-size:.8em;}
@@ -281,7 +285,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 
 /* Mobile Landscape */
 @media all and (min-width: 480px) and (max-width: 748px) { 
-  .sidebar {width:100%; clear:both; padding-top:40px;}
+  div.sidebar {width:100%; clear:both; padding-top:40px;}
   article.work {width:100%;}
   #search-container { position:absolute; top:30px; right:20px;}
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 450px;} 

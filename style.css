@@ -249,8 +249,8 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 
 
 /* -------------------- SINGLE WORK PAGE -------------------- */
-article.work {width:60%; float:left;}
-div.sidebar {width:39%; float:right;}
+article.work {width:70%; float:left;}
+div.sidebar {width:29%; float:right;}
 .inner-wrapper { padding-right:20px;}
 article.nosidebar {width:100%; float:none;}
 article.nosidebar .inner-wrapper {padding:0;}

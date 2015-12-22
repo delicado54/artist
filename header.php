@@ -45,7 +45,7 @@
                 break;
             endif;
         endforeach;
-        if($current):
+        if(!$current):
             echo ' archiveitem';
         endif;
     endif; 

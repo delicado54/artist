@@ -135,26 +135,31 @@ header nav li {display:inline;}
 header nav li a { font-size:1.2em; font-weight:bold; display:block; float:left; padding:10px 15px 8px 0; text-transform:uppercase; text-decoration:none;}
 header nav ul li ul {display:none;}
 nav {position:relative; height:80px;}
-header nav ul li.current_page_item ul, header nav ul li.current_page_ancestor ul {display:block; position:absolute; left:0; top:30px; width:100%;}
+body.single-works header nav ul li.page-item-6 ul, header nav ul li.current_page_item ul, header nav ul li.current_page_ancestor ul {display:block; position:absolute; left:0; top:30px; width:100%;}
 header nav  li.current_page_item > a, header nav li.current_page_ancestor > a, header nav li a:hover { color: #348085;   }
-header nav  ul.children li.current_page_item > a, #filter li a.active {color:#aaa;}
+header nav  ul.children li.current_page_item > a, .archiveitem .page-item-47 a, #filter li a.active {color:#aaa;}
 .children li {font-size:.8em;}
 #filter {
 position: relative;
-    top: -10px;
+    top: -35px;
     padding:0;
-    margin:1em 0 0 ;
+    margin:1em 0 0;
+    font-size:.9em;
 
   } #filter li {display:inline;} #filter li a {display:block; padding: 10px 15px 8px 0; float:left; font-weight:bold; text-transform:uppercase; text-decoration:none;}
 #search-container {float:right;}
 
+/* Work page */
+h1 {padding-bottom:20px;}
+.inner-wrapper > div, .inner-wrapper > div img {max-width:100%; height:auto;}
+.wp-caption-text {font-size:.7em;}
 /* Footer */
 
 #footer-bottom {padding-top:40px;font-size:.8em;}
 #socialmedia {float:left; padding-top:20px;}
 .newsletter {float:right; padding-top:20px;}
 /* Grid  */
-#grid {clear:both; list-style:none; margin:0; padding:20px 0;}
+#grid {clear:both; list-style:none; margin:0; padding:0 0 20px 0;}
 #grid li { display:inline;}
 #grid li a {display:block; float:left; width:25%; text-decoration:none; margin-bottom:40px;}
 div.thumb-holder {height: 160px;}

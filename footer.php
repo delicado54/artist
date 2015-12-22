@@ -1,7 +1,7 @@
         <footer>
            
             <div class="container" id="footer-bottom">
-                <p>&copy; <?php bloginfo("title"); ?>, <?php echo date('Y'); ?></p>
+                <p>&copy; <?php bloginfo("title"); ?>, <?php echo date('Y'); ?>. All rights reserved</p>
 
 
             <div class="newsletter"><p>Subscribe to our quarterly newsletter </span><a href="http://eepurl.com/GLqBP" target="_blank">here</a></p></div>

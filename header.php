@@ -33,7 +33,16 @@
 </head>
 <body <?php body_class(); ?>>
 
-    <div class="container" id="body-container">
+    <div class="container<?php 
+    // if it's a single work in the archive category, output a class to indicate this
+    //print_r($post);
+    if($post->post_type =='works'):
+    $terms = wp_get_post_terms($post->ID, 'work-type');
+        if(!in_array('current',$terms)):
+            echo ' archiveitem';
+        endif;
+    endif; 
+    ?>" id="body-container">
 
         <header class="clearfix">
             <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><img src="<?php bloginfo('template_url'); ?>/img/header_logo.png" alt="<?php bloginfo('title'); ?>" /></a>

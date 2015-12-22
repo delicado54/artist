@@ -5,7 +5,7 @@
 
         jQuery(document).ready(function() {
             
-            if(jQuery("#filter").length > 0) { 
+            if(jQuery("#filter:not(.subnav)").length > 0) { 
                jQuery('#q').liveUpdate('#grid').focus();            
                jQuery('#filter a').click(function (e) {
                     // TODO - do this only if screen is larger than 675

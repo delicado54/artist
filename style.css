@@ -293,7 +293,7 @@ article.nosidebar .inner-wrapper {padding:0;}
   section{   margin: 0 !important; }
   section{  margin-bottom: 20px !important; }
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
-  ul.news {width:100%;}  
+  ul.news {width:100%;}
   img{   max-width: 100%; }
   h2.strap {line-height:1.4em;}
   #grid li a { width:50%;}
@@ -304,7 +304,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 
 /* Mobile Portrait */
 @media all and (min-width: 0px) and (max-width: 479px) { 
-    ul.news {width:100%;}  
+    ul.news {width:100%;}
   #search-container {display:none;}
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 95%; min-width:300px;} 
   section{   margin: 0 !important; }

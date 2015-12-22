@@ -285,6 +285,7 @@ div.sidebar {width:39%; float:right;}
     #grid li a { width:100%;}
 header nav li a {font-size:1.05em;}
  #filter li a {font-size:0.8em}
+ #filter {padding: 0 0 0 2.5% }
 div.thumb-holder {height:auto;}
   img{   max-width: 100%; }
     .newsletter {float:none; clear:both;}
@@ -292,6 +293,10 @@ div.thumb-holder {height:auto;}
 
 }
 
+@media all and (min-width: 0px) and (max-width: 359px) { 
+header nav li a {font-size:.95em;}
+
+}
 /* -------------------- PSEUDO -------------------- */
 
 /* selection colours */

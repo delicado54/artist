@@ -53,7 +53,7 @@
     ?>" id="body-container">
 
         <header class="clearfix">
-            <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><img src="<?php bloginfo('template_url'); ?>/img/header_logo.png" alt="<?php bloginfo('title'); ?>" /></a>
+            <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><img src="<?php bloginfo('template_url'); ?>/img/header_logo.jpg" alt="<?php bloginfo('title'); ?>" /></a>
             <h2 class="strap"><?php bloginfo('description'); ?></h2>
              <div id="search-container" class="search-box-wrapper hide">
                     <div class="search-box">

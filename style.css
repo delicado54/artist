@@ -127,9 +127,10 @@ section:first-child{ margin-left: 0;  }
 
 /* header */
 header {margin-top:20px;}
-#search-container {position:relative;top:70px;}
+#search-container {position:relative;top: 47px;
+    z-index: 9;}
 #header-logo { float:left; margin-right:20px; margin-bottom:10px; }
-h2.strap {line-height:55px; float:left; font-size:1em;}
+h2.strap {line-height:36px; float:left; font-size:1em;}
 nav {clear:both;}
 header nav li {display:inline;}
 header nav li a { font-size:1.2em; font-weight:bold; display:block; float:left; padding:10px 15px 8px 0; text-transform:uppercase; text-decoration:none;}
@@ -290,7 +291,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 @media all and (min-width: 480px) and (max-width: 748px) { 
   div.sidebar {width:100%; clear:both; padding-top:40px;}
   article.work {width:100%;}
-  #search-container { position:absolute; top:30px; right:20px;}
+  #search-container { position:absolute; top:6px; right:20px;}
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 450px;} 
   header {margin-top:10px; }   
   section{   margin: 0 !important; }

@@ -252,7 +252,7 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 article.work {width:70%; float:left;}
 div.sidebar {width:29%; float:right;}
 .inner-wrapper { padding-right:20px;}
-.inner-wrapper img {width: 100%;
+.inner-wrapper img {max-width: 100%;
     height: auto;}
 article.nosidebar {width:70%; float:none;}
 article.nosidebar .inner-wrapper {padding:0;}

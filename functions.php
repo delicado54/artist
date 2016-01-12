@@ -15,6 +15,7 @@ function disable_wp_emojicons() {
 add_action( 'init', 'disable_wp_emojicons' );
 add_filter('embed_oembed_html', 'my_embed_oembed_html', 99, 4);
 function my_embed_oembed_html($html, $url, $attr, $post_id) {
+  $html = str_replace ('" width="500" height="400" frameborder="0" title="','?title=0&byline=0&portrait=0&color=ffffff" width="500" height="400" frameborder="0" title="',$html);
   return '<div class="video-container">' . $html . '</div>';
 }
 

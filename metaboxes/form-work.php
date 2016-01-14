@@ -49,13 +49,10 @@
 
 <p>
     <?php $mb->the_field('sidebarlinks'); ?>
-    <label for="sidebarlinks">Sidebar</label>
-
-    
+    <label for="sidebarlinks">Sidebar</label>  
     <?php 
-    wp_editor(format_for_editor($metabox->get_the_value()), 'sidebarlinks'); ?>
-
-
+    $settings = array('textarea_name' => $mb->get_the_name());
+    wp_editor(html_entity_decode($metabox->get_the_value()), 'sidebarlinks', $settings); ?>
 
     <span>Paste in sidebar links (new line for each)</span>
   </p>

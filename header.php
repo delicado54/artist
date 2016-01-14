@@ -68,7 +68,6 @@
 
         <header class="clearfix">
             <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><img src="<?php bloginfo('template_url'); ?>/img/header_logo.jpg" alt="<?php bloginfo('title'); ?>" /></a>
-            <h2 class="strap"><?php bloginfo('description'); ?></h2>
              <div id="search-container" class="search-box-wrapper hide">
                     <div class="search-box">
                     <?php get_search_form(); ?>
@@ -76,14 +75,6 @@
             </div> 
             <nav>
                 <!-- Main page nav -->
-                <ul>
-                    <?php
-                    $nav_args = array(
-                        'sort_column' => 'menu_order, post_title',
-                        'title_li' => ''
-                    );
-                    wp_list_pages($nav_args);
-                    ?>
-                </ul>                        
+                <?php wp_nav_menu( array('menu' => 'Main', 'container' => '') ); ?>                     
             </nav>
         </header>

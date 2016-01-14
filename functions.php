@@ -19,6 +19,8 @@ function my_embed_oembed_html($html, $url, $attr, $post_id) {
   return '<div class="video-container">' . $html . '</div>';
 }
 
+
+
 function disable_emojicons_tinymce( $plugins ) {
   if ( is_array( $plugins ) ) {
     return array_diff( $plugins, array( 'wpemoji' ) );
@@ -71,11 +73,11 @@ function register_post_types(){
       'supports' => array('title', 'editor', 'thumbnail') 
     )
   );    
-register_post_type( 'articles',
+register_post_type( 'texts',
     array(
       'labels' => array(
-        'name' => __( 'Articles' ),
-        'singular_name' => __( 'Article' )
+        'name' => __( 'Texts' ),
+        'singular_name' => __( 'Text' )
       ),
       'public' => true,
       'has_archive' => true,

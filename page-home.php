@@ -21,6 +21,8 @@ if ( have_posts() ) : the_post();
       <li>In three days time we join the company of others in Turku, then next week the work goes (without us) to Helsinki! <a href="">http://newperformance.fi/?lang=en</a></li>
       </ul>
   </div>
+              <h2 class="strap"><?php bloginfo('description'); ?></h2>
+
   
 </div>
 <?php

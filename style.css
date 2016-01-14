@@ -126,16 +126,15 @@ section:first-child{ margin-left: 0;  }
 
 
 /* header */
-header {margin-top:20px;}
-#search-container {position:relative;top: 47px;
-    z-index: 9;}
+header {padding-top:20px; background:#fff; z-index:10;}
+
 #header-logo { float:left; margin-right:20px; margin-bottom:10px; }
 h2.strap {line-height:36px; float:left; font-size:1em;}
 nav {clear:both;}
 header nav li {display:inline;}
 header nav li a { font-size:1.2em; font-weight:bold; display:block; float:left; padding:10px 15px 8px 0; text-transform:uppercase; text-decoration:none;}
 header nav ul li ul {display:none;}
-nav {position:relative; height:80px;}
+nav {position:relative; height:50px;}
 body.single-works header nav ul li.page-item-6 ul, header nav ul li.current_page_item ul, header nav ul li.current_page_ancestor ul {display:block; position:absolute; left:0; top:30px; width:100%;}
 header nav  li.current_page_item > a, header nav li.current_page_ancestor > a, header nav li a:hover { color: #348085;   }
 header nav  ul.children li.current_page_item > a, .archiveitem .page-item-47 a, .currentitem .page-item-49 a, #filter li a.active {color:#aaa;}

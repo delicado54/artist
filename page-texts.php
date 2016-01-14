@@ -7,11 +7,7 @@ if ( have_posts() ) : the_post();
 		<?php // pull out categories
 		$cats = get_terms('work-type'); 
 		//print_r($cats);
-		foreach($cats as $cat):
-			if($cat->slug=='current'):
-
-				continue;
-			endif;
+		foreach($cats as $cat):			
 		?><li><a href="#grid" data-group="<?php echo $cat->name; ?>"><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
 		<?php endforeach; ?>
 		</ul>	
@@ -26,9 +22,9 @@ if ( have_posts() ) : the_post();
 <?php 
 	
 	// pull out all works
-	// (continue of no thumbnail)
+	// (continue if no thumbnail)
 wp_reset_query();		
-$loop = new WP_Query(array('post_type' => 'works', 
+$loop = new WP_Query(array('post_type' => 'works'/*, 
 'tax_query'	=> array(
         array(
             'taxonomy'  => 'work-type',
@@ -36,7 +32,7 @@ $loop = new WP_Query(array('post_type' => 'works',
             'terms'     => 'current', // exclude media posts in the news-cat custom taxonomy
             'operator'  => 'NOT IN'
             )
-       ), 'posts_per_page' => 200, 'order' =>'ASC','orderby'=> 'menu_order' )); 
+       )*/, 'posts_per_page' => 200, 'order' =>'ASC','orderby'=> 'menu_order' )); 
 $count=0;
 global $post;
 if ($loop->have_posts()) : 

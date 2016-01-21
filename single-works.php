@@ -24,7 +24,7 @@ $sidebarlinks = get_post_meta($post->ID,'sidebarlinks', true);
 
                 continue;
             endif;
-        ?><li><a href="/work/archive/?c=<?php echo $cat->name; ?>#grid"><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
+        ?><li><a href="/work/?c=<?php echo $cat->name; ?>#grid"><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
         <?php endforeach; ?>
         </ul>  
 <?php // endif; ?> 

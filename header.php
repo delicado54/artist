@@ -43,9 +43,8 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 	<?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-
+</head><?php if(is_page()) { $page_slug = 'page-'.$post->post_name; } ?>
+<body <?php body_class($page_slug); ?>>
     <div class="container<?php 
     // if it's a single work in the archive category, output a class to indicate this
     //print_r($post);

@@ -5,13 +5,13 @@ if ( have_posts() ) : the_post();
 	<ul id="filter">
 		<li><a href="#grid" data-group="all" class="active">All</a></li>
 		<?php // pull out categories
-		$cats = get_terms('work-type'); 
+		$cats = get_terms('text-type'); 
 		//print_r($cats);
 		foreach($cats as $cat):			
 		?><li><a href="#grid" data-group="<?php echo $cat->name; ?>"><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
 		<?php endforeach; ?>
 		</ul>	
-<div class="container clearfix works-container">
+<div class="container clearfix texts-container">
       
     <div class="wrapper clearfix group">
 		
@@ -21,13 +21,13 @@ if ( have_posts() ) : the_post();
 		<ul id="grid">
 <?php 
 	
-	// pull out all works
+	// pull out all texts
 	// (continue if no thumbnail)
 wp_reset_query();		
-$loop = new WP_Query(array('post_type' => 'works'/*, 
+$loop = new WP_Query(array('post_type' => 'texts'/*, 
 'tax_query'	=> array(
         array(
-            'taxonomy'  => 'work-type',
+            'taxonomy'  => 'text-type',
             'field'     => 'slug',
             'terms'     => 'current', // exclude media posts in the news-cat custom taxonomy
             'operator'  => 'NOT IN'
@@ -39,7 +39,7 @@ if ($loop->have_posts()) :
     while ($loop->have_posts()) : $loop->the_post(); 
     $imageurl = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'artist-thumb' );
     if(count($imageurl)<1): continue; endif;					
-?><li class="item" data-groups='["all"<?php $cats = get_the_terms($post->ID, 'work-type');  if($cats){
+?><li class="item" data-groups='["all"<?php $cats = get_the_terms($post->ID, 'text-type');  if($cats){
 foreach($cats as $id => $cat){
 	echo ', "'.$cat->name .'"';
 }} 

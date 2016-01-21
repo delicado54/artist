@@ -97,6 +97,17 @@ function register_taxonomies(){
       'query_var' => true
     )
   );
+  register_taxonomy('text-type', array('texts'),
+    array(
+      'labels' => array(
+        'name' => __( 'Types of Text' ),
+        'singular_name' => __( 'Text Type' )
+      ),
+      'hierarchical' => true,
+      'show_ui' => true,
+      'query_var' => true
+    )
+  );  
 }
 add_action( 'init', 'register_post_types', 0 );
 add_action( 'init', 'register_taxonomies', 0 );

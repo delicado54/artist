@@ -138,8 +138,8 @@ nav {position:relative; height:75px;}
 body.single-works header nav ul li.page-item-6 ul, header nav ul li.current_page_item ul, header nav ul li.current_page_ancestor ul,
 body.single-publications li#menu-item-232 ul, body.single-texts li#menu-item-232 ul {display:block; position:absolute; left:0; top:30px; width:100%;}
 header nav  li.current_page_item > a, header nav li.current_page_ancestor > a, header nav li a:hover,
-body.single-publications li#menu-item-232, body.single-texts li#menu-item-232
- { color: #348085;   }
+body.single-publications li#menu-item-232 a, body.single-texts li#menu-item-232 a, body.single-publications #menu-item-235 a, 
+body.single-texts #menu-item-238 a{ color: #348085;   }
 header nav  ul.children li.current_page_item > a, .archiveitem .page-item-47 a, .currentitem .page-item-49 a, #filter li a.active {color:#aaa;}
 .children li {font-size:.8em;}
 #filter {

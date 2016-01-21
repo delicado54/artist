@@ -154,7 +154,9 @@ position: relative;
 #search-container {float:right;}
 .page-work #filter {top:-60px; font-size:1em;}
 
-
+div.container {padding-top:15px;}
+.page-work div.container {padding-top:0;}
+div#body-container {padding:0;}
 /* Work page */
 h1 {padding-bottom:20px;}
 .inner-wrapper > div, .inner-wrapper > div img {max-width:100%; height:auto;}
@@ -164,6 +166,9 @@ ul.bxslider {padding-left:0;}
 /* Home Page */
 ul.news {list-style:none; padding:0; font-size:.9em; width:50%;}
 ul.news li {display:block; margin-bottom:20px;}
+
+/* Tables */
+td {padding-right:5px;}
 /* Footer */
 
 #footer-bottom {padding-top:40px;font-size:.8em;}

@@ -3,12 +3,12 @@ get_header();
 if ( have_posts() ) : the_post(); 
 ?>
 	<ul id="filter">
-		<li><a href="#grid" data-group="all" class="active">All</a></li>
+		<li><a href="#grid" data-group="all"<?php if(!isset($_GET['c'])):?> class="active"<?php endif; ?>>All</a></li>
 		<?php // pull out categories
 		$cats = get_terms('work-type'); 
 		//print_r($cats);
 		foreach($cats as $cat):			
-		?><li><a href="#grid" data-group="<?php echo $cat->name; ?>"><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
+		?><li><a href="#grid" data-group="<?php echo $cat->name; ?>"<?php if(isset($_GET['c']) && $_GET['c']== $cat->name):?> class="active"<?php endif; ?>><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
 		<?php endforeach; ?>
 		</ul>	
 <div class="container clearfix works-container">

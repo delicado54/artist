@@ -2,7 +2,7 @@
 get_header(); 
 if ( have_posts() ): the_post();
 
-
+?>
 <div class="container clearfix">
        
             <h1><em><?php the_title(); ?></em></h1>

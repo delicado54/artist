@@ -152,10 +152,9 @@ position: relative;
 
   } #filter li {display:inline;} #filter li a {display:block; padding: 10px 15px 8px 0; float:left; font-weight:bold; text-transform:uppercase; text-decoration:none;}
 #search-container {float:right;}
-.page-work #filter {top:-60px; font-size:1em;}
+.page-work #filter, .single-works #filter {top:-60px; font-size:1em;}
 
 div.container {padding-top:15px;}
-.page-work div.container {padding-top:0;}
 div#body-container {padding:0;}
 /* Work page */
 h1 {padding-bottom:20px;}

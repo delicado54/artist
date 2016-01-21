@@ -133,6 +133,7 @@ h2.strap {line-height:36px; float:left; font-size:1em;}
 nav {clear:both;}
 header nav li {display:inline;}
 header nav li a { font-size:1.2em; font-weight:bold; display:block; float:left; padding:10px 15px 8px 0; text-transform:uppercase; text-decoration:none;}
+header nav li ul li a {font-size:1.1em;}
 header nav ul li ul {display:none;}
 nav {position:relative; height:75px;}
 body.single-works header nav ul li.page-item-6 ul, header nav ul li.current_page_item ul, header nav ul li.current_page_ancestor ul,

@@ -313,6 +313,8 @@ article.nosidebar .inner-wrapper {padding:0;}
   #grid li a { width:50%;}
   .newsletter {float:none; clear:both;}
   #s {max-width:110px;}
+  header nav li ul li a {font-size:.95em; padding:7px 10px 2px 0 ;}
+
 
 }
 
@@ -320,12 +322,15 @@ article.nosidebar .inner-wrapper {padding:0;}
 @media all and (min-width: 0px) and (max-width: 479px) { 
     ul.news {width:100%;}
   #search-container {display:none;}
-  header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 95%; min-width:300px;} 
+  header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{   min-width:300px; max-width:100%;} 
+  #body-container {width: 95%;}
   section{   margin: 0 !important; }
   section{  margin-bottom: 20px !important; }
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
     #grid li a { width:100%;}
 header nav li a {font-size:1.05em;}
+header nav li ul li a {font-size:.85em; padding:5px 10px 2px 0 ;}
+
  #filter li a {font-size:0.8em}
  #filter {padding: 0 0 0 2.5% }
 div.thumb-holder {height:auto;}
@@ -337,6 +342,8 @@ div.thumb-holder {height:auto;}
 
 @media all and (min-width: 0px) and (max-width: 359px) { 
 header nav li a {font-size:.95em;}
+header nav li ul li a {font-size:.75em; padding:2px 10px 2px 0 ;}
+
 
 }
 /* -------------------- PSEUDO -------------------- */

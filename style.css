@@ -155,7 +155,7 @@ position: relative;
 .page-work #filter, .single-works #filter {top:-60px; font-size:1em;}
 
 div.container {padding-top:15px;}
-div#body-container {padding:0;}
+div#body-container, body.single-works div.container {padding:0;}
 /* Work page */
 h1 {padding-bottom:20px;}
 .inner-wrapper > div, .inner-wrapper > div img {max-width:100%; height:auto;}

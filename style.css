@@ -168,7 +168,7 @@ ul.news {list-style:none; padding:0; font-size:.9em; width:50%;}
 ul.news li {display:block; margin-bottom:20px;}
 
 /* Tables */
-td {padding-right:5px;}
+td {padding:2px 8px 2px 0;}
 /* Footer */
 
 #footer-bottom {padding-top:40px;font-size:.8em;}

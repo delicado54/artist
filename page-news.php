@@ -10,7 +10,7 @@ if ( have_posts() ):
 <div class="container clearfix">
 
 <?php 
-$loop = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '10', 'order' =>'DESC' )); ?>
+$loop = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '9', 'order' =>'DESC' )); ?>
 
 <?php 
  while ($loop->have_posts()) : $loop->the_post();

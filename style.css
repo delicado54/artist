@@ -177,6 +177,7 @@ td {padding:2px 8px 2px 0;}
 #grid {clear:both; list-style:none; margin:0; padding:0 0 20px 0;}
 #grid li { display:inline;}
 #grid li a {display:block; float:left; width:25%; text-decoration:none; margin-bottom:40px;}
+#grid img {max-width:100%;}
 div.thumb-holder {height: 160px;}
 div.thumb-holder:hover img {
     filter: alpha(opacity=80);

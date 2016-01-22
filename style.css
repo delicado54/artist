@@ -181,6 +181,7 @@ td {padding:2px 8px 2px 0;}
 #grid li { display:inline;}
 #grid li a {display:block; float:left; width:25%; text-decoration:none; margin-bottom:40px;}
 #grid img {max-width:95%;}
+.page-work #grid {margin-top:-50px;}
 div.thumb-holder {height: 160px; position:relative;}
 div.thumb-holder:hover img {
     filter: alpha(opacity=80);
@@ -327,6 +328,10 @@ article.nosidebar .inner-wrapper {padding:0;}
 
 /* Mobile Portrait */
 @media all and (min-width: 0px) and (max-width: 479px) { 
+  .page-work #grid {margin-top:0px;}
+div.thumb-holder img {position:static; }
+
+  
     ul.news {width:100%;}
   #search-container {display:none;}
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{   min-width:300px; max-width:100%;} 

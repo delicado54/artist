@@ -15,7 +15,7 @@ $sidebarlinks = get_post_meta($post->ID,'sidebarlinks', true);
     //if(!$current):
 ?>
 <ul id="filter" class="subnav">
-        <li><a href="/work/archive/" data-group="all">All</a></li>
+        <li><a href="/work/" data-group="all">All</a></li>
         <?php // pull out categories
         $cats = get_terms('work-type'); 
         //print_r($cats);

@@ -15,16 +15,13 @@ $sidebarlinks = get_post_meta($post->ID,'sidebarlinks', true);
     if(!$current):
 ?>
 <ul id="filter" class="subnav">
-        <li><a href="/text/archive/" data-group="all">All</a></li>
+        <li><a href="/text/" data-group="all">All</a></li>
         <?php // pull out categories
         $cats = get_terms('text-type'); 
         //print_r($cats);
         foreach($cats as $cat):
-            if($cat->slug=='current'):
-
-                continue;
-            endif;
-        ?><li><a href="/text/archive/?c=<?php echo $cat->name; ?>#grid"><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
+            
+        ?><li><a href="/text/?c=<?php echo $cat->name; ?>#grid"><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
         <?php endforeach; ?>
         </ul>  
 <?php endif; ?> 

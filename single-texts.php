@@ -21,7 +21,7 @@ $sidebarlinks = get_post_meta($post->ID,'sidebarlinks', true);
         //print_r($cats);
         foreach($cats as $cat):
             
-        ?><li><a href="/texts/?c=<?php echo $cat->name; ?>#grid"><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
+        ?><li><a href="/texts/?c=<?php echo $cat->name; ?>"><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
         <?php endforeach; ?>
         </ul>  
 <?php endif; ?> 

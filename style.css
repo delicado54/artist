@@ -328,7 +328,6 @@ article.nosidebar .inner-wrapper {padding:0;}
 
 /* Mobile Portrait */
 @media all and (min-width: 0px) and (max-width: 479px) { 
-  .page-work #grid {margin-top:0px;}
 div.thumb-holder img {position:static; }
 
   

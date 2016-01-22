@@ -32,7 +32,7 @@ $sidebarlinks = get_post_meta($post->ID,'sidebarlinks', true);
        
             <h1><em><?php the_title(); ?></em></h1>
 <?php // output info line if there is one 
-$sidebarlinks = get_post_meta($post->ID,'description', true);
+$description = get_post_meta($post->ID,'description', true);
 if($description !=''):
 ?><h2><?php echo $description; ?></h2><?php endif; ?>
         <article class="work<?php if($sidebarlinks ==''):?> nosidebar<?php endif ?>" id="post-<?php the_id(); ?>">

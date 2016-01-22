@@ -194,7 +194,7 @@ transition: opacity .2s;
 }
 
 /* news grid */
-.page-news #grid .item h3 {height:100px; overflow:hidden;}
+#grid .item h3 {height:100px; overflow:hidden;}
 
 /* ICONS */
 
@@ -333,7 +333,7 @@ article.nosidebar .inner-wrapper {padding:0;}
     #grid li a { width:100%;}
 header nav li a {font-size:1.05em;}
 header nav li ul li a {font-size:.85em; padding:5px 10px 2px 0 ;}
-.page-news #grid .item h3 {height:auto; overflow:visible;}
+#grid .item h3 {height:auto; overflow:visible;}
 
  #filter li a {font-size:0.8em}
  #filter {padding: 0 0 0 2.5% }

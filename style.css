@@ -193,6 +193,9 @@ div.thumb-holder:hover   {
 transition: opacity .2s;
 }
 
+/* news grid */
+.page-news #grid .item h3 {height:100px; overflow:hidden;}
+
 /* ICONS */
 
 #socialmedia a {text-decoration:none; color: #aaa; font-size:24px}

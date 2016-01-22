@@ -181,7 +181,7 @@ td {padding:2px 8px 2px 0;}
 #grid li { display:inline;}
 #grid li a {display:block; float:left; width:25%; text-decoration:none; margin-bottom:40px;}
 #grid img {max-width:95%;}
-div.thumb-holder {height: 160px;}
+div.thumb-holder {height: 160px; position:relative;}
 div.thumb-holder:hover img {
     filter: alpha(opacity=80);
     -moz-opacity: 0.8;
@@ -195,9 +195,10 @@ div.thumb-holder:hover   {
 -o-transition: opacity .2s;
 transition: opacity .2s;
 }
+div.thumb-holder img {position:absolute; bottom:10px;}
 
 /* news grid */
-#grid .item h3 {height:100px; overflow:hidden;}
+#grid .item h3 {padding-left:2px; height:100px; overflow:hidden;}
 
 /* ICONS */
 

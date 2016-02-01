@@ -342,7 +342,9 @@ article.nosidebar .inner-wrapper {padding:0;}
   h2.strap {line-height:1.4em;}
   .page-news #grid {width:75%;}
   .page-news #grid li a {width:50%;}
-
+.page-news #grid {width:100%; float:none;}
+  .page-news #grid li a {width:100%;}
+  .blog-sidebar {width:100%;}
 
   #grid li a { width:50%;}
   .newsletter {float:none; clear:both;}
@@ -357,6 +359,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 div.thumb-holder img {position:static; }
 .page-news #grid {width:100%; float:none;}
   .page-news #grid li a {width:100%;}
+  .blog-sidebar {width:100%;}
   
     ul.news {width:100%;}
   #search-container {display:none;}

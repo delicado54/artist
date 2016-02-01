@@ -284,6 +284,7 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 .single-post #footer-bottom .row {display:block;}
 
 .page-news #grid {width:75%; float:left;}
+.page-news #grid li {padding-bottom:2px;}
 .page-news #grid li a {width:33%;}
 
 /* -------------------- SINGLE WORK PAGE -------------------- */

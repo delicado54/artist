@@ -267,6 +267,17 @@ div.thumb-holder img {position:absolute; bottom:10px;}
 a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000; background: #fff; text-decoration: none; position: relative; margin: 0 20px 10px 0; line-height: 1.1em; display: inline-block; border: none;  }
 
 
+/* FOOTER */
+#footer-bottom ul { list-style:none; padding:0; margin:0;}
+.single-post .footer-container { background:#eee;}
+#footer-bottom ul a {text-decoration:none; line-height:1.2;}
+#footer-bottom ul a:hover {text-decoration:underline;}
+#footer-bottom ul li ul {padding-left:10px; padding-bottom:10px;}
+#footer-bottom .column {width:30%; float:left;}
+#socialmedia {clear:both;}
+#footer-bottom .row {display:none;}
+.single-post #footer-bottom .row {display:block;}
+
 /* -------------------- SINGLE WORK PAGE -------------------- */
 article.work {width:70%; float:left;}
 div.sidebar {width:29%; float:right;}
@@ -278,9 +289,10 @@ article.nosidebar .inner-wrapper {padding:0;}
 .bx-prev {position:absolute; left:0px; top:-30px;z-index:2;}
 .bx-next {position:absolute; right:0px;top:-30px;z-index:2;}
 .bx-viewport {z-index:0;}
-.bx-controls {height:30px; position:relative;}
+.bx-wrapper {position:relative;}
+.bx-controls {height:30px; position:absolute;top:15px;z-index:11;width:100%;}
 .bx-controls a {text-decoration:none; font-size:1.3em;}
-.image-caption {min-height:30px;padding: 0 30px; font-style:italic; font-size:.9em; line-height:.9em; margin-top:8px;}
+.image-caption {min-height:30px;padding: 0 0px; font-style:italic; font-size:.9em; line-height:.9em; margin-top:8px;}
 .bxslider {list-style:none;}
 
 /* -------------------- MEDIA QUERIES -------------------- */
@@ -343,8 +355,8 @@ header nav li a {font-size:1.05em;}
 header nav li ul li a {font-size:.85em; padding:5px 10px 2px 0 ;}
 #grid .item h3 {height:auto; overflow:visible;}
 
- #filter li a {font-size:0.8em}
- #filter {padding: 0 0 0 2.5% }
+ #filter li a {font-size:0.8em; padding: 10px 10px 0 0;}
+ #filter {padding: 0 0 0 0 /*2.5%*/ }
 div.thumb-holder {height:auto;}
   img{   max-width: 100%; }
     .newsletter {float:none; clear:both;}

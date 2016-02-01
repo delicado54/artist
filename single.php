@@ -10,7 +10,7 @@ if ( have_posts() ): the_post();
         
             <h1><?php the_title(); ?></h1>
 
-            <span class="meta">by <?php the_author(); ?> on <?php the_time('j F, Y \a\t H:i') ?></span>
+            <span class="meta"><?php the_time('j F Y') ?></span>
 
             <?php the_content(); ?>
           

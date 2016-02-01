@@ -1,7 +1,55 @@
-        <footer>
+</div>
+        <div class="footer-container"><footer>
            
-            <div class="container" id="footer-bottom">
+            <div class="container" id="footer-bottom">               
                 <p>&copy; <?php bloginfo("title"); ?>, <?php echo date('Y'); ?>. All rights reserved</p>
+<div class="row">
+<div class="column">
+<ul><li><a href="/work">Work</a>
+<ul>
+ <li><a href="/work/">All</a></li>
+        <?php // pull out categories
+        $cats = get_terms('work-type'); 
+        //print_r($cats);
+        foreach($cats as $cat):
+            if($cat->slug=='current'):
+
+                continue;
+            endif;
+        ?><li><a href="/work/?c=<?php echo $cat->name; ?>"><?php echo $cat->name; ?><?php //echo $cat->description; ?></a></li>
+        <?php endforeach; ?>
+</ul></li>
+<li><a href="/about/">About</a>
+<ul>
+<?php $aboutpage = get_page_by_path('about'); wp_list_pages('title_li=0&child_of='.$aboutpage->ID); ?>
+</ul>
+</li></ul>
+</div>
+
+                    <div class="column">
+                        <h4>Links</h4>
+                        <ul>
+                        <li><a href="http://fun.com" target="_blank">You could put some links here</a></li>
+
+                        </ul>
+                    </div>
+    
+                    <div  class="column">
+                        <h4>Subjects</h4>
+                        <div class="cat-list">
+                         <ul>
+                         <?php 
+                         $args = array('orderby' => 'count', 'title_li' => '');
+                         wp_list_categories( $args ); ?> 
+                                     </ul>
+                        </div>
+                        <p class="more"><a href="http://www.joshuasofaer.com/categories">View all</a></p>
+                    </div>
+
+<br style="clear:both" />
+</div>
+
+
 
 
             <div class="newsletter"><p>Subscribe to our quarterly newsletter </span><a href="http://eepurl.com/GLqBP" target="_blank">here</a></p></div>
@@ -14,7 +62,7 @@
 
 
             </div>
-        </footer>
+        </footer></div>
 
         </div><!-- #body-container -->
 
@@ -25,6 +73,7 @@
     <script>
     jQuery(window).load(function(){
       jQuery("header").sticky({ topSpacing: 0 });
+
     });
     </script>
        

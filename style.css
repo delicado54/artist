@@ -286,6 +286,7 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 .page-news #grid {width:75%; float:left;}
 .page-news #grid li {padding-bottom:2px;}
 .page-news #grid li a {width:33%;}
+.page-news #grid li h3 {font-size:1em;}
 
 /* -------------------- SINGLE WORK PAGE -------------------- */
 article.work {width:70%; float:left;}

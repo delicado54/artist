@@ -39,7 +39,7 @@
                         <div class="cat-list">
                          <ul>
                          <?php 
-                         $args = array('orderby' => 'count', 'title_li' => '');
+                         $args = array('orderby' => 'count', 'title_li' => '', 'number' =>20);
                          wp_list_categories( $args ); ?> 
                                      </ul>
                         </div>

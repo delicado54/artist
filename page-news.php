@@ -26,7 +26,7 @@ echo $post->post_title; ?></em></h3>
 		
 </ul>
 
-<div class="sidebar">
+<div class="blog-sidebar">
   <?php include('sidebar.php'); ?>
    <h4>Archives</h4>
    <ul>

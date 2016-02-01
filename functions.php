@@ -119,17 +119,18 @@ set_post_thumbnail_size( 208, 150, false );
 add_image_size("artist-thumb",  208, 150, false);
 
 /* ---- Sidebar ---- */
-/*
+
 if ( function_exists('register_sidebar') ){
 	register_sidebar(array(
 	'name' => 'sidebar1',
+  'id' => 'sidebar-1',
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
 	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 }
-*/
+
 /* ---- Scripts ---- */
 /* Scripts */
 function enqueue_scripts(){

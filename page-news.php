@@ -26,8 +26,21 @@ echo $post->post_title; ?></em></h3>
 		
 </ul>
 
-
-  
+<div class="sidebar">
+  <?php include('sidebar.php'); ?>
+   <h4>Archives</h4>
+   <ul>
+   <?php wp_get_archives(); ?>
+   </ul>
+                        <h4>Subjects</h4>
+                        <div class="cat-list">
+                         <ul>
+                         <?php 
+                         $args = array('orderby' => 'count', 'title_li' => '', 'number' =>-1);
+                         wp_list_categories( $args ); ?> 
+                                     </ul>
+                        </div>
+                    </div>
 </div>
 	
 <?php

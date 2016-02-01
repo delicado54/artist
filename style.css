@@ -267,6 +267,7 @@ div.thumb-holder img {position:absolute; bottom:10px;}
 a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000; background: #fff; text-decoration: none; position: relative; margin: 0 20px 10px 0; line-height: 1.1em; display: inline-block; border: none;  }
 
 /* SIDEBAR */
+.sidebar {width:25%;}
 .sidebar ul {list-style:none; margin:0; padding:5px 0 20px 0;}
 .sidebar a { text-decoration:none;}
 .sidebar a:hover {text-decoration:underline;}
@@ -281,6 +282,9 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 #socialmedia {clear:both;}
 #footer-bottom .row {display:none;}
 .single-post #footer-bottom .row {display:block;}
+
+.page-news #grid {width:75%; float:left;}
+.page-news #grid li a {width:33%;}
 
 /* -------------------- SINGLE WORK PAGE -------------------- */
 article.work {width:70%; float:left;}

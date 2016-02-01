@@ -36,7 +36,7 @@ echo $post->post_title; ?></em></h3>
                         <div class="cat-list">
                          <ul>
                          <?php 
-                         $args = array('orderby' => 'count', 'title_li' => '', 'number' =>-1);
+                         $args = array('orderby' => 'count', 'title_li' => '', 'number' =>15);
                          wp_list_categories( $args ); ?> 
                                      </ul>
                         </div>

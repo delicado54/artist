@@ -267,9 +267,9 @@ div.thumb-holder img {position:absolute; bottom:10px;}
 a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000; background: #fff; text-decoration: none; position: relative; margin: 0 20px 10px 0; line-height: 1.1em; display: inline-block; border: none;  }
 
 /* SIDEBAR */
-.blog-sidebar {width:25%;}
+.blog-sidebar {width:25%; float:right; font-size:.85em;}
 .blog-sidebar ul {list-style:none; margin:0; padding:5px 0 20px 0;}
-.blog-sidebar a { text-decoration:none;}
+.blog-sidebar a { text-decoration:none; padding-bottom:3px;}
 .blog-sidebar a:hover {text-decoration:underline;}
 
 /* FOOTER */

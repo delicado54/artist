@@ -269,6 +269,7 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 /* NEWS */
 .prev-post {float:left;}
 .next-post {float:right;}
+.single-post article {float:left;}
 /* SIDEBAR */
 .blog-sidebar {width:23%; float:right; font-size:.85em; color:#aaa;}
 .blog-sidebar ul {list-style:none; margin:0; padding:5px 0 20px 0;}

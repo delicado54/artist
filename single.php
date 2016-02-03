@@ -15,6 +15,7 @@ if ( have_posts() ): the_post();
             <?php the_content(); ?>
           
         </article>
+  <?php include('sidebar.php'); ?>
         
     </div>
   

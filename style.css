@@ -266,6 +266,9 @@ div.thumb-holder img {position:absolute; bottom:10px;}
 
 a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000; background: #fff; text-decoration: none; position: relative; margin: 0 20px 10px 0; line-height: 1.1em; display: inline-block; border: none;  }
 
+/* NEWS */
+.prev-post {float:left;}
+.next-post {float:right;}
 /* SIDEBAR */
 .blog-sidebar {width:23%; float:right; font-size:.85em; color:#aaa;}
 .blog-sidebar ul {list-style:none; margin:0; padding:5px 0 20px 0;}

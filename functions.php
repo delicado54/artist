@@ -112,6 +112,16 @@ function register_taxonomies(){
 add_action( 'init', 'register_post_types', 0 );
 add_action( 'init', 'register_taxonomies', 0 );
 
+
+add_filter('next_posts_link_attributes', 'posts_link_attributes_1');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_2');
+
+function posts_link_attributes_1() {
+    return 'class="prev-post"';
+}
+function posts_link_attributes_2() {
+    return 'class="next-post"';
+}
 /* ---- Post Thumbnails ---- */
 
 add_theme_support('post-thumbnails', array('post','articles','works','publications','texts'));

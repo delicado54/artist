@@ -62,17 +62,7 @@ function register_post_types(){
       'supports' => array('title', 'editor', 'thumbnail') 
     )
   );  
-  register_post_type( 'publications',
-    array(
-      'labels' => array(
-        'name' => __( 'Publications' ),
-        'singular_name' => __( 'Publication' )
-      ),
-      'public' => true,
-      'has_archive' => true,
-      'supports' => array('title', 'editor', 'thumbnail') 
-    )
-  );    
+ 
 register_post_type( 'texts',
     array(
       'labels' => array(

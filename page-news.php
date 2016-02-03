@@ -25,7 +25,9 @@ echo $post->post_title; ?></em></h3>
 						<?php endwhile; ?>					
 		
 </ul>
-
+<?php next_posts_link(); ?>
+<?php previous_posts_link(); ?>
+Test
 <?php
 	// Previous/next page navigation.
 			the_posts_pagination( array(

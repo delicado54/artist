@@ -28,16 +28,9 @@ echo $post->post_title; ?></em></h3>
 <?php endwhile; ?>					
 <?php
 	// Previous/next page navigation.
-echo $paged;
-
-if(get_the_posts_pagination()):?><li><?php
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
+ next_posts_link('&laquo; Older Posts', $loop->max_num_pages);
+ previous_posts_link('Newer Posts &raquo;'); 
 		?></li><?php
-endif;
 			?>
 </ul>
 <div class="blog-sidebar">

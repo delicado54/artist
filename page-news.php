@@ -10,7 +10,10 @@ if ( have_posts() ):
 <div class="container clearfix">
 
 <?php 
-$loop = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '12', 'order' =>'DESC' )); ?>
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+$loop = new WP_Query(array('post_type' => 'post', 'order' =>'DESC' , 'paged' => $paged)); ?>
+
 <ul id="grid">
 <?php 
  while ($loop->have_posts()) : $loop->the_post();
@@ -22,16 +25,18 @@ $loop = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '12', 'ord
 <h3><em><?php 
 echo $post->post_title; ?></em></h3>
 <?php if(isset($description)):echo $description; endif; ?></a></li>
-
+<?php endwhile; ?>					
 <?php
 	// Previous/next page navigation.
+if(get_the_posts_pagination()):?><li><?php
 			the_posts_pagination( array(
 				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
 				'next_text'          => __( 'Next page', 'twentyfifteen' ),
 				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
 			) );
+		?></li><?php
+endif;
 			?>
-						<?php endwhile; ?>					
 </ul>
 <div class="blog-sidebar">
   <?php include('sidebar.php'); ?>

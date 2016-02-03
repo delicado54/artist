@@ -45,25 +45,6 @@
 	<?php wp_head(); ?>
 </head><?php $page_slug = ''; if(is_page()) { $page_slug = 'page-'.$post->post_name; } ?>
 <body <?php body_class($page_slug); ?>>
-    <div class="container<?php 
-    // if it's a single work in the archive category, output a class to indicate this
-    //print_r($post);
-    if($post->post_type =='works'):
-    $terms = wp_get_post_terms($post->ID, 'work-type');
-        $current = false;
-        foreach($terms as $term):
-            if($term->slug=='current'):
-                $current = true;
-                break;
-            endif;
-        endforeach;
-        if(!$current):
-            echo ' archiveitem';
-        else:
-            echo ' currentitem';
-        endif;
-    endif; 
-    ?>" id="body-container">
     <div class="header-container">
         <header class="clearfix">
             <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><img src="<?php bloginfo('template_url'); ?>/img/header_logo.jpg" alt="<?php bloginfo('title'); ?>" /></a>
@@ -78,3 +59,5 @@
             </nav>
         </header>
     </div>
+    <div class="container" id="body-container">
+

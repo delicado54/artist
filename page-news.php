@@ -28,6 +28,8 @@ echo $post->post_title; ?></em></h3>
 <?php endwhile; ?>					
 <?php
 	// Previous/next page navigation.
+echo $paged;
+
 if(get_the_posts_pagination()):?><li><?php
 			the_posts_pagination( array(
 				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),

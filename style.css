@@ -127,7 +127,7 @@ section:first-child{ margin-left: 0;  }
 
 /* header */
 header {padding-top:20px; background:#fff; z-index:10;}
-
+.header-container {z-index:911;}
 #header-logo { float:left; margin-right:20px; margin-bottom:10px; }
 h2.strap {line-height:36px; float:left; font-size:1em;}
 nav {clear:both;}
@@ -280,13 +280,14 @@ span.meta {padding-bottom:10px; display:block;}
 /* FOOTER */
 #footer-bottom ul { list-style:none; padding:0; margin:0;}
 .single-post .footer-container { background:#eee;}
-#footer-bottom ul a {text-decoration:none; line-height:1.2;}
+#footer-bottom ul a {text-decoration:none; line-height:1.2; display:block;}
 #footer-bottom ul a:hover {text-decoration:underline;}
-#footer-bottom ul li ul {padding-left:10px; padding-bottom:10px;}
+#footer-bottom ul li ul {padding-top:3px; padding-bottom:10px; font-size:.95em;}
 #footer-bottom .column {width:30%; float:left;}
 #socialmedia {clear:both;}
 #footer-bottom .row {display:none;}
 .single-post #footer-bottom .row {display:block;}
+#footer-bottom h4 {padding-bottom:6px;}
 
 .page-news #grid {width:75%; float:left;}
 .page-news #grid li {padding-bottom:2px;}

@@ -5,6 +5,7 @@
                 <p>&copy; <?php bloginfo("title"); ?>, <?php echo date('Y'); ?>. All rights reserved</p>
 <div class="row">
 <div class="column">
+<h4>Site Map</h4>
 <ul><li><a href="/work">Work</a>
 <ul>
  <li><a href="/work/">All</a></li>
@@ -28,8 +29,10 @@
 
                     <div class="column">
                         <h4>Links</h4>
+                        <?php 
+                        ?>
                         <ul>
-                        <li><a href="http://fun.com" target="_blank">You could put some links here</a></li>
+                            <?php wp_list_bookmarks( 'title_li=0&categorize=0' ); ?> 
 
                         </ul>
                     </div>
@@ -43,7 +46,7 @@
                          wp_list_categories( $args ); ?> 
                                      </ul>
                         </div>
-                        <p class="more"><a href="http://www.joshuasofaer.com/categories">View all</a></p>
+                        <p class="more"><a href="/categories">View all</a></p>
                     </div>
 
 <br style="clear:both" />
@@ -72,7 +75,7 @@
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/jquery.sticky.js"></script>
     <script>
     jQuery(window).load(function(){
-      jQuery("header").sticky({ topSpacing: 0 });
+      jQuery(".header-container").sticky({ topSpacing: 0 });
 
     });
     </script>

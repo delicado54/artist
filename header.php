@@ -64,7 +64,7 @@
         endif;
     endif; 
     ?>" id="body-container">
-
+    <div class="header-container">
         <header class="clearfix">
             <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><img src="<?php bloginfo('template_url'); ?>/img/header_logo.jpg" alt="<?php bloginfo('title'); ?>" /></a>
              <div id="search-container" class="search-box-wrapper hide">
@@ -77,3 +77,4 @@
                 <?php wp_nav_menu( array('menu' => 'Main', 'container' => '') ); ?>                     
             </nav>
         </header>
+    </div>

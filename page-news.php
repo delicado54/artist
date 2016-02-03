@@ -22,10 +22,7 @@ $loop = new WP_Query(array('post_type' => 'post', 'posts_per_page' => '12', 'ord
 <h3><em><?php 
 echo $post->post_title; ?></em></h3>
 <?php if(isset($description)):echo $description; endif; ?></a></li>
-<li>
-<?php next_posts_link(); ?>
-<?php previous_posts_link(); ?>
-Test
+
 <?php
 	// Previous/next page navigation.
 			the_posts_pagination( array(
@@ -33,7 +30,7 @@ Test
 				'next_text'          => __( 'Next page', 'twentyfifteen' ),
 				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
 			) );
-			?></li>
+			?>
 						<?php endwhile; ?>					
 </ul>
 <div class="blog-sidebar">

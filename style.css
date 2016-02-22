@@ -317,6 +317,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 .image-caption {min-height:30px;padding: 0 0px; font-style:italic; font-size:.9em; line-height:.9em; margin-top:8px;}
 .bxslider {list-style:none;}
 .page-home .container { padding:0; }
+.page-home article.work {width:67%; overflow:hidden; margin-top:-15px;}
 
 /* -------------------- MEDIA QUERIES -------------------- */
 

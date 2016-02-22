@@ -74,10 +74,10 @@
     <script src="<?php bloginfo('template_url'); ?>/js/libs/jquery.livesearch.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/jquery.sticky.js"></script>
     <script>
-    jQuery(window).load(function(){
+    /*jQuery(window).load(function(){
       jQuery(".header-container").sticky({ topSpacing: 0 });
 
-    });
+    });*/
     </script>
        
         <script>

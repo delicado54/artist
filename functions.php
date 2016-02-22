@@ -75,6 +75,21 @@ register_post_type( 'texts',
     )
   );      
 }
+
+register_post_type( 'home-slide',
+            array(
+                'labels' => array(
+                    'name' => __( 'Homepage Slides' ),
+                    'singular_name' => __( 'Homepage Slide' )
+                ),
+                'public' => true,
+                'has_archive' => false,
+                'supports' => array('title', 'thumbnail', 'editor', 'page-attributes'),
+                'exclude_from_search' => true,
+                'menu_icon'=>'dashicons-images-alt'
+            )
+        );
+
 function register_taxonomies(){
   register_taxonomy('work-type', array('works'),
     array(

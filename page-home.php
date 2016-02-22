@@ -7,12 +7,18 @@ if ( have_posts() ) : the_post();
     <div class="wrapper clearfix">
     
       <?php the_content(); ?>
+
+      <?php // check if there are any home slides ?>
 <article class="work">      
  <ul class="bxslider">
-<li><a href="#"><img src="http://fm.zarmi.com/wp-content/uploads/2015/12/05_smallspace.jpg" title="05_smallspace" /></a><p class="image-caption">Over The Threshold, 2011. Soho, London. Photo: French&Mottershead/Adrian Wood</p></li>
-<li><a href="#"><img src="http://fm.zarmi.com/wp-content/uploads/2015/12/laura.jpg"  /></a><p class="image-caption">The Shops Project: Laura (Fashion Boutique), 2009. Ljubljana, Slovenia. Photo: French&Mottershead/Urska Boljkovac</p></li>
-<li><a href="#"><img src="http://fm.zarmi.com/wp-content/uploads/2015/12/tuulastus.jpg" /></a><p class="image-caption">Understory 9: Tuulastas (night fishing), 2012. Kuopio, Finland. Photo: Pekka Makinen</p></li>
-<li><a href="#"><img src="http://fm.zarmi.com/wp-content/uploads/2015/12/psecho1.jpg"  /></a><p class="image-caption">The Echo Newspapers, 2007 &amp; 2010.</p></li>
+ <?php // pull out all home slides 
+$loop = new WP_Query(array('post_type' => 'home-slide', 'order' =>'DESC', 'posts_per_page' => 10)); 
+
+ while ($loop->have_posts()) : $loop->the_post();
+  $imageurl = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'home-slide' );
+    if(count($imageurl)<1): continue; endif; ?><li class="item"><a href="#"><?php
+?><img src="<?php echo $imageurl[0]; ?>" /></a><p class="image-caption"><?php if($post->post_content !=''): echo $post->post_content; endif; ?></p></li>
+<?php endwhile; ?>
 </ul>
 </article>
 <div class="sidebar">

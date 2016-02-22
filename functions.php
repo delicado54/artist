@@ -84,7 +84,7 @@ register_post_type( 'home-slide',
                 ),
                 'public' => true,
                 'has_archive' => false,
-                'supports' => array('title', 'thumbnail', 'editor', 'page-attributes'),
+                'supports' => array('title', 'thumbnail','editor', 'page-attributes'),
                 'exclude_from_search' => true,
                 'menu_icon'=>'dashicons-images-alt'
             )
@@ -129,9 +129,10 @@ function posts_link_attributes_2() {
 }
 /* ---- Post Thumbnails ---- */
 
-add_theme_support('post-thumbnails', array('post','articles','works','publications','texts'));
+add_theme_support('post-thumbnails', array('post','articles','works','publications','texts','home-slide'));
 set_post_thumbnail_size( 208, 150, false );
 add_image_size("artist-thumb",  208, 150, false);
+add_image_size("home-slide", 643, 362, true);
 
 /* ---- Sidebar ---- */
 

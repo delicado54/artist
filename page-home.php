@@ -16,9 +16,19 @@ if ( have_posts() ) : the_post();
 </ul>
 <h3>Latest Updates</h3>
 <ul class="news">
-      <li>Did you get to listen to our radio program? If not and you want to a 'refreshing perspective on the five stages of human decomposition' (thanks Stephen Hodge) here's a permalink: <a href="#">https://www.mixcloud.com/Resonance/clear-spot-18th-december-2015-french-mottershead/</a></li>
-      <li>Glad to hear news of 'The Perth &amp; Sydney Echo' now part of a national collection. http://cs.nga.gov.au/Detail.cfm?IRN=270480</li>
-      <li>In three days time we join the company of others in Turku, then next week the work goes (without us) to Helsinki! <a href="">http://newperformance.fi/?lang=en</a></li>
+<?php 
+$loop = new WP_Query(array('post_type' => 'post', 'order' =>'DESC')); 
+
+ while ($loop->have_posts()) : $loop->the_post();
+     $imageurl = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'artist-thumb' );
+
+?><li class="item">
+<a href="<?php echo get_permalink($post->ID); ?>"><div class="thumb-holder">	
+<img src="<?php if($imageurl[0]!=''): echo $imageurl[0]; else: bloginfo('template_url'); ?>/img/news_placeholder.png<?php endif;	 ?>" alt="<?php echo $post->post_title; ?>" /></div>
+<h3><em><?php 
+echo $post->post_title;  ?></em></h3>
+<?php if($post->post_excerpt !=''): echo $post->post_excerpt; endif; ?></a></li>
+<?php endwhile; ?>	    
       </ul>
   </div>
               <h2 class="strap"><?php bloginfo('description'); ?></h2>

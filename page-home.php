@@ -17,7 +17,7 @@ if ( have_posts() ) : the_post();
 <h3>Latest Updates</h3>
 <ul class="news">
 <?php 
-$loop = new WP_Query(array('post_type' => 'post', 'order' =>'DESC')); 
+$loop = new WP_Query(array('post_type' => 'post', 'order' =>'DESC', 'post_limits' => 3)); 
 
  while ($loop->have_posts()) : $loop->the_post();
 

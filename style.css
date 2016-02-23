@@ -161,7 +161,7 @@ div#body-container, body.single-works div.container {padding:0;}
 h1 {padding-bottom:20px;}
 .inner-wrapper > div, .inner-wrapper > div img {max-width:100%; height:auto;}
 .wp-caption-text {font-size:.7em;}
-article .wp-caption, article img {width:100% !important}
+article .wp-caption, article img {width:100% !important; height:auto !important;}
 
 .wp-caption img {width:100%; height:auto;}
 ul.bxslider {padding-left:0;}

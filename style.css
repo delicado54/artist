@@ -188,6 +188,7 @@ td {padding:2px 8px 2px 0;}
 #grid li { display:inline;}
 #grid li a {display:block; float:left; width:25%; text-decoration:none; margin-bottom:30px;}
 #grid img {max-width:95%;}
+#grid li h3{ font-size: 1em; }
 .page-work #grid {margin-top:-50px;}
 div.thumb-holder {height: 150px; position:relative;}
 div.thumb-holder:hover img {

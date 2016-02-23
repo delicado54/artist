@@ -381,8 +381,12 @@ div.thumb-holder img {position:static; }
 .page-news #grid {width:100%; float:none;}
   .page-news #grid li a {width:100%;}
   .blog-sidebar {width:100%;}
-  .footer-container {padding: 0 20px;}
+  .footer-container {max-width:95%; margin:auto;}
+  .newsletter {padding:0;}
+  #socialmedia {padding:5px 0 20px;}
     ul.news {width:100%;}  
+  }
+  }
   #search-container {display:none;}
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{   min-width:300px; max-width:100%;} 
  header { max-width:95%; }

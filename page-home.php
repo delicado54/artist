@@ -12,7 +12,7 @@ if ( have_posts() ) : the_post();
 <article class="work">      
  <ul class="bxslider">
  <?php // pull out all home slides 
-$loop = new WP_Query(array('post_type' => 'home-slide', 'order' =>'DESC', 'posts_per_page' => 10)); 
+$loop = new WP_Query(array('post_type' => 'home-slide', 'order' =>'ASC', 'posts_per_page' => 10)); 
 
  while ($loop->have_posts()) : $loop->the_post();
   $imageurl = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'home-slide' );
@@ -25,7 +25,7 @@ $loop = new WP_Query(array('post_type' => 'home-slide', 'order' =>'DESC', 'posts
 <h3>Latest Updates</h3>
 <ul class="news">
 <?php 
-$loop = new WP_Query(array('post_type' => 'post', 'orderby' => 'menu_order', 'order' =>'ASC', 'posts_per_page' => 3)); 
+$loop = new WP_Query(array('post_type' => 'home-link', 'order' =>'ASC', 'posts_per_page' => 3)); 
 
  while ($loop->have_posts()) : $loop->the_post();
 

@@ -90,6 +90,20 @@ register_post_type( 'home-slide',
             )
         );
 
+register_post_type( 'home-link',
+            array(
+                'labels' => array(
+                    'name' => __( 'Homepage Links' ),
+                    'singular_name' => __( 'Homepage Link' )
+                ),
+                'public' => true,
+                'has_archive' => false,
+                'supports' => array('title', 'thumbnail','editor', 'page-attributes'),
+                'exclude_from_search' => true,
+                'menu_icon'=>'dashicons-images-alt'
+            )
+        );
+
 function register_taxonomies(){
   register_taxonomy('work-type', array('works'),
     array(

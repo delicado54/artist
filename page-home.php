@@ -25,7 +25,7 @@ $loop = new WP_Query(array('post_type' => 'home-slide', 'order' =>'DESC', 'posts
 <h3>Latest Updates</h3>
 <ul class="news">
 <?php 
-$loop = new WP_Query(array('post_type' => 'post', 'order' =>'DESC', 'posts_per_page' => 3)); 
+$loop = new WP_Query(array('post_type' => 'post', 'orderby' => 'menu_order', 'order' =>'ASC', 'posts_per_page' => 3)); 
 
  while ($loop->have_posts()) : $loop->the_post();
 
@@ -37,7 +37,7 @@ echo $post->post_title;  ?></em></h3>
       </ul>
       </div>
   </div>
-              <h2 class="strap"><?php bloginfo('description'); ?></h2>
+              <p><?php bloginfo('description'); ?> <a href="/about">more</a></h2>
 
   
 </div>

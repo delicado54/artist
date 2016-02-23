@@ -76,7 +76,7 @@ body{
 }
 
 p{  line-height: 1.6em; margin: 0 0 10px 0;  }
-a:link, a:visited{   color: #000; text-decoration: underline; }
+a, a:visited{   color: #000; text-decoration: underline; }
 a:hover {color: #61d503; }
 
 /* headings */

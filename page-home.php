@@ -37,7 +37,10 @@ echo $post->post_title;  ?></em></h3>
       </ul>
       </div>
   </div>
-              <p><?php bloginfo('description'); ?> <a href="/about">more</a></h2>
+              <article class="work">
+              <br />
+              <p><?php bloginfo('description'); ?> &#8230; <a href="/about">more</a></p>
+              </article>
 
   
 </div>

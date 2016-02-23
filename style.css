@@ -129,7 +129,10 @@ section:first-child{ margin-left: 0;  }
 li.menu-item {}
 header {padding-top:20px; background:#fff; z-index:10;}
 .header-container {z-index:911; width:100%; background:#fff;}
-#header-logo { float:left; margin-right:20px; margin-bottom:10px; }
+#header-logo { float:left; margin-right:20px; margin-bottom:10px; 
+    font-size: 1.8em;
+    text-decoration: none;
+}
 h2.strap {line-height:36px; float:left; font-size:1em;}
 nav {clear:both;}
 header nav li {display:inline;}

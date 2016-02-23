@@ -47,7 +47,7 @@
 <body <?php body_class($page_slug); ?>>
     <div class="header-container">
         <header class="clearfix">
-            <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><img src="<?php bloginfo('template_url'); ?>/img/header_logo.jpg" alt="<?php bloginfo('title'); ?>" /></a>
+            <a id="header-logo" title="<?php bloginfo('title'); ?>" href="/"><?php bloginfo('title'); ?></a>
              <div id="search-container" class="search-box-wrapper hide">
                     <div class="search-box">
                     <?php get_search_form(); ?>

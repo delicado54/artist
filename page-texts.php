@@ -8,7 +8,7 @@ if ( have_posts() ) : the_post();
 		$cats = get_terms('text-type'); 
 		//print_r($cats);
 		foreach($cats as $cat):			
-		?><li><a href="#grid" data-group="<?php echo $cat->name; ?>"><strong><?php echo $cat->name; ?></strong><?php //echo $cat->description; ?></a></li>
+		?><li><a href="#grid" data-group="<?php echo $cat->name; ?>"><?php echo $cat->name; ?><?php //echo $cat->description; ?></a></li>
 		<?php endforeach; ?>
 		</ul>	
 <div class="container clearfix texts-container">

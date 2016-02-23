@@ -308,7 +308,7 @@ span.meta {padding-bottom:10px; display:block;}
 
 /* -------------------- SINGLE WORK PAGE -------------------- */
 article.work {width:70%; float:left;}
-article.work .wp-caption-text {padding-bottom:20px;}
+article.work .wp-caption-text {padding-bottom:10px;}
 div.sidebar {width:29%; float:right;}
 article.home-text {padding-top:40px;}
 .inner-wrapper { padding-right:20px;}

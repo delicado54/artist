@@ -153,7 +153,7 @@ position: relative;
 
   } #filter li {display:inline;} #filter li a {display:block; padding: 10px 15px 8px 0; float:left; text-decoration:none;}
 #search-container {float:right;}
-.page-work #filter, .single-works #filter {top:-60px; font-size:1.1em;}
+.page-work #filter, .single-works #filter {top:-60px; font-size:1em;}
 
 div.container {padding-top:15px;}
 div#body-container, body.single-works div.container {padding:0;}

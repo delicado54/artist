@@ -41,11 +41,7 @@
         <input type="text" id="description" name="<?php $mb->the_name(); ?>" value="<?php $mb->the_value(); ?>" />     
   </p>
    
- <p>
-    <?php $mb->the_field('commissioned'); ?>
-    <label for="commissioned">Commissioned By</label>
-        <input type="text" id="commissioned" name="<?php $mb->the_name(); ?>" value="<?php $mb->the_value(); ?>" />     
-  </p>
+ 
 
 <p>
     <?php $mb->the_field('sidebarlinks'); ?>

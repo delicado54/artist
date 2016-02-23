@@ -36,8 +36,7 @@ echo $post->post_content;  ?></em></h3></a></li>
       </ul>
       </div>
   </div>
-              <article class="work">
-              <br />
+              <article class="work home-text">
               <p><?php bloginfo('description'); ?> &#8230; <a href="/about">more</a></p>
               </article>
 

@@ -203,6 +203,7 @@ div.thumb-holder img {position:absolute; bottom:7px;}
 
 /* news grid */
 #grid .item h3 {padding-left:2px; height:50px; overflow:hidden;}
+.page-news #grid .item h3 {height:80px;}
 
 /* ICONS */
 

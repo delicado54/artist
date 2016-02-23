@@ -373,6 +373,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 @media all and (min-width: 0px) and (max-width: 479px) { 
 div.thumb-holder img {position:static; }
 .single-post article {float:none; width:100%;}
+  div.sidebar {width:100%; clear:both; padding-top:40px;}
 
 .page-news #grid {width:100%; float:none;}
   .page-news #grid li a {width:100%;}

@@ -347,7 +347,10 @@ article.nosidebar .inner-wrapper {padding:0;}
 /* Mobile Landscape */
 @media all and (min-width: 480px) and (max-width: 748px) { 
   div.sidebar {width:100%; clear:both; padding-top:40px;}
+
   article.work {width:100%;}
+  .page-home article.work { width:100%; }
+
   #search-container { position:absolute; top:6px; right:20px;}
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 450px;} 
   header {margin-top:10px; }   
@@ -374,7 +377,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 div.thumb-holder img {position:static; }
 .single-post article {float:none; width:100%;}
   div.sidebar {width:100%; clear:both; padding-top:40px;}
-
+.page-home article.work { width:100%; }
 .page-news #grid {width:100%; float:none;}
   .page-news #grid li a {width:100%;}
   .blog-sidebar {width:100%;}
@@ -382,6 +385,7 @@ div.thumb-holder img {position:static; }
     ul.news {width:100%;}  
   #search-container {display:none;}
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{   min-width:300px; max-width:100%;} 
+ header { max-width:95%; }
   #body-container {width: 95%;}
   section{   margin: 0 !important; }
   section{  margin-bottom: 20px !important; }

@@ -31,8 +31,7 @@ $loop = new WP_Query(array('post_type' => 'home-link', 'order' =>'ASC', 'posts_p
 
 ?><li class="item">
 <a href="<?php echo get_permalink($post->ID); ?>"><h3><em><?php 
-echo $post->post_title;  ?></em></h3>
-<?php if($post->post_excerpt !=''): echo $post->post_excerpt; endif; ?></a></li>
+echo $post->post_content;  ?></em></h3></a></li>
 <?php endwhile; ?>	    
       </ul>
       </div>

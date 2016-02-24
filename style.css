@@ -426,6 +426,7 @@ div.thumb-holder img {position:static; }
   #s {width:120px;}
   .image-caption {line-height:1.2em; min-height:45px;}
   .bx-prev, .bx-next {top:33%;}
+
   #socialmedia {padding:5px 0 20px;}
     ul.news {width:100%;}  
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{   min-width:300px; max-width:100%;} 
@@ -438,6 +439,7 @@ div.thumb-holder img {position:static; }
 header nav li a {font-size:1.05em;}
 header nav li ul li a {font-size:.85em; padding:5px 10px 2px 0 ;}
 #grid .item h3 {height:auto; overflow:visible;}
+#grid img {max-width:100%;}
  #filter li a {font-size:0.8em; padding: 10px 10px 0 0;}
  #filter {padding: 0 0 0 0 /*2.5%*/ }
 div.thumb-holder {height:auto;}

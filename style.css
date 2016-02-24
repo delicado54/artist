@@ -124,7 +124,7 @@ section:first-child{ margin-left: 0;  }
   width: 100%;
   height: 100%;
 }
-
+.archive-count {display:none;}
 
 /* header */
 nav #menu-main > li:not(:first-child) > a:before{

@@ -395,7 +395,7 @@ article.nosidebar .inner-wrapper {padding:0;}
   div.sidebar {width:100%; clear:both; padding-top:40px;}
 
 #news-items {width:100%;}
- #news-items h3 {font-size:1em;}
+ #news-items h3 a{font-size:1em;}
   article.work {width:100%;}
   .page-home article.work { width:100%; }
 
@@ -428,7 +428,7 @@ div.thumb-holder img {position:static; }
 .page-home article.work { width:100%; }
 #news-items {width:100%;}
 
- #news-items h3 {font-size:1em;}
+ #news-items h3 a {font-size:1em;}
   .blog-sidebar {width:100%;}
   .footer-container {max-width:95%; margin:auto;}
   .newsletter {padding:0;}
@@ -473,6 +473,8 @@ header nav li ul li a {font-size:.75em; padding:2px 10px 2px 0 ;}
 
   }
   #s {width:100px;}
+   #news-items li h3 a {font-size:0.9em;}
+
 
 
 }

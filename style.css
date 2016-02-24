@@ -396,6 +396,12 @@ article.nosidebar .inner-wrapper {padding:0;}
 /* Mobile Landscape */
 @media all and (min-width: 480px) and (max-width: 748px) { 
   div.sidebar {width:100%; clear:both; padding-top:40px;}
+.texts-grid li {width:100%; float:none; padding-bottom:30px;}
+.text-thumb-holder {float:left;width:45%;}
+.text-thumb-holder img {max-width:95%;}
+.texts-grid h3 {float:left; width:45%;}
+.texts-grid h3 a {text-decoration:none; font-size:.9em;}
+
 
 #news-items {width:100%;}
  #news-items h3 a{font-size:1em;}

@@ -53,11 +53,10 @@ if ($loop->have_posts()) :
 foreach($cats as $id => $cat){
 	echo ', "'.$cat->name .'"';
 }} 
-?>]'>
-<a target="_blank" href="<?php if($pdfurl !=''): echo $pdfurl; else: echo '#'; endif; ?>"><div class="text-thumb-holder">	
-<img src="<?php echo $imageurl[0]; ?>" alt="<?php echo $post->post_title; ?>" /></div>
-<h3><em><?php 
-echo $post->post_title; ?></em></h3>
+?>]'><div class="text-thumb-holder"><a target="_blank" href="<?php if($pdfurl !=''): echo $pdfurl; else: echo '#'; endif; ?>">	
+<img src="<?php echo $imageurl[0]; ?>" alt="<?php echo $post->post_title; ?>" /></a></div>
+<h3><a target="_blank" href="<?php if($pdfurl !=''): echo $pdfurl; else: echo '#'; endif; ?>"><?php 
+echo $post->post_title; ?></a></h3>
 <?php if(isset($description)):echo $description; endif; ?></a></li>
 						<?php endwhile; ?>					
 		<?php endif; ?>

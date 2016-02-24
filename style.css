@@ -127,7 +127,7 @@ section:first-child{ margin-left: 0;  }
 
 
 /* header */
-nav li:not(:first-child) a:before{
+nav #menu-main > li:not(:first-child) > a:before{
     content: " | ";
     padding: 0 13px 0 0;
     color: #8A8888 !important;
@@ -327,6 +327,7 @@ span.meta {padding-bottom:10px; display:block;}
 
 /* -------------------- SINGLE WORK PAGE -------------------- */
 .workholder {clear: left;
+
     top: -30px;
     position: relative;}
 article.work {width:70%; float:left;}

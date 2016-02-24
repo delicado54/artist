@@ -23,7 +23,7 @@
                });
             }
 
-            jQuery( "#filter li a.active" ).trigger( "click" );
+            jQuery( "#filter li a.active:not([data-group='all'])" ).trigger( "click" );
 
         });
 

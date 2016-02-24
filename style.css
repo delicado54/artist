@@ -206,11 +206,11 @@ td {padding:2px 8px 2px 0;}
 #socialmedia {float:left; padding:20px 0;}
 .newsletter {float:right; padding:20px 0;}
 /* Grid  */
-#grid {clear:both; list-style:none; margin:0; padding:0 0 20px 0;}
-#grid li { display:inline;}
-#grid li a {display:block; float:left; width:25%; text-decoration:none; margin-bottom:30px;}
-#grid img {max-width:95%;}
-#grid li h3{ font-size: 1em; }
+.page-work #grid {clear:both; list-style:none; margin:0; padding:0 0 20px 0;}
+.page-work #grid li { display:inline;}
+.page-work #grid li a {display:block; float:left; width:25%; text-decoration:none; margin-bottom:30px;}
+.page-work #grid img {max-width:95%;}
+.page-work #grid li h3{ font-size: 1em; }
 .page-work #grid {margin-top:-50px;}
 div.thumb-holder {height: 150px; position:relative;}
 div.thumb-holder:hover img {

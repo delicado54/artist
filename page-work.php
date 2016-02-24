@@ -37,9 +37,9 @@ $count=0;
 global $post;
 if ($loop->have_posts()) : 
     while ($loop->have_posts()) : $loop->the_post(); 
-    $imageurl = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'artist-thumb' );
+    $imageurl = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'medium' );
     if(count($imageurl)<1): continue; endif;					
-?><li class="item" data-groups='["all"<?php $cats = get_the_terms($post->ID, 'home-slide');  if($cats){
+?><li class="item" data-groups='["all"<?php $cats = get_the_terms($post->ID, 'work-type');  if($cats){
 foreach($cats as $id => $cat){
 	echo ', "'.$cat->name .'"';
 }} 

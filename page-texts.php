@@ -18,7 +18,7 @@ if ( have_posts() ) : the_post();
 		
 		<input type="hidden" value="" name="q" id="q">
 <?php the_content(); ?>
-		<ul id="texts-grid">
+		<ul id="grid" class="texts-grid">
 <?php 
 	
 	// pull out all texts

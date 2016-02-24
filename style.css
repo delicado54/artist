@@ -236,12 +236,12 @@ div.thumb-holder img {position:absolute; bottom:7px;}
 .news-thumb-holder {float:left; width:40%; margin-bottom:15px;}
 .news-thumb-holder img {max-width:90%;}
 .page-texts #grid .item h3 {height:100px; font-size:1em;}
-#texts-grid { list-style:none; padding-left:0; } 
-#texts-grid li {width:50%; float:left; padding-bottom:30px;}
+.texts-grid { list-style:none; padding-left:0; } 
+.texts-grid li {width:50%; float:left; padding-bottom:30px;}
 .text-thumb-holder {float:left;width:45%;}
 .text-thumb-holder img {max-width:95%;}
-#texts-grid h3 {float:left; width:45%;}
-#texts-grid h3 a {text-decoration:none; font-size:.9em;}
+.texts-grid h3 {float:left; width:45%;}
+.texts-grid h3 a {text-decoration:none; font-size:.9em;}
 /* ICONS */
 
 #socialmedia a {text-decoration:none; color: #aaa; font-size:24px}

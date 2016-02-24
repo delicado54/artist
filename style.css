@@ -396,6 +396,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 
  .news-thumb-holder {float:none; width:100%; margin-bottom:15px;}
  .news-thumb-holder img {max-width:100%;}
+ #news-items h3 {font-size:1em;}
   article.work {width:100%;}
   .page-home article.work { width:100%; }
 
@@ -426,8 +427,9 @@ div.thumb-holder img {position:static; }
 .single-post article {float:none; width:100%;}
   div.sidebar {width:100%; clear:both; padding-top:40px;}
 .page-home article.work { width:100%; }
-.page-news #grid {width:100%; float:none;}
-  .page-news #grid li a {width:100%;}
+ .news-thumb-holder {float:none; width:100%; margin-bottom:15px;}
+ .news-thumb-holder img {max-width:100%;}
+ #news-items h3 {font-size:1.1em;}
   .blog-sidebar {width:100%;}
   .footer-container {max-width:95%; margin:auto;}
   .newsletter {padding:0;}

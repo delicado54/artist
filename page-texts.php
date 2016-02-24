@@ -18,7 +18,7 @@ if ( have_posts() ) : the_post();
 		
 		<input type="hidden" value="" name="q" id="q">
 <?php the_content(); ?>
-		<ul id="grid">
+		<ul id="texts-grid">
 <?php 
 	
 	// pull out all texts
@@ -49,12 +49,12 @@ if ($loop->have_posts()) :
 	$query_pdf = new WP_Query( $query_pdf_args );
     $pdfurl = $query_pdf->posts[0]->guid;
     if(count($imageurl)<1): continue; endif;					
-?><li class="item" data-groups='["all"<?php $cats = get_the_terms($post->ID, 'text-type');  if($cats){
+?><li class="text" data-groups='["all"<?php $cats = get_the_terms($post->ID, 'text-type');  if($cats){
 foreach($cats as $id => $cat){
 	echo ', "'.$cat->name .'"';
 }} 
 ?>]'>
-<a target="_blank" href="<?php if($pdfurl !=''): echo $pdfurl; else: echo '#'; endif; ?>"><div class="thumb-holder">	
+<a target="_blank" href="<?php if($pdfurl !=''): echo $pdfurl; else: echo '#'; endif; ?>"><div class="text-thumb-holder">	
 <img src="<?php echo $imageurl[0]; ?>" alt="<?php echo $post->post_title; ?>" /></div>
 <h3><em><?php 
 echo $post->post_title; ?></em></h3>

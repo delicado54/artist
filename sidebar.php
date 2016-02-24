@@ -83,7 +83,7 @@ endforeach; ?>
                         <div class="cat-list">
                          <ul>
                          <?php 
-                         $args = array('orderby' => 'count', 'title_li' => '', 'number' =>15);
+                         $args = array('orderby' => 'count', 'title_li' => '', 'number' =>515);
                          wp_list_categories( $args ); ?> 
                                      </ul>
                         </div>

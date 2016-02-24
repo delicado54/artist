@@ -157,6 +157,17 @@ position: relative;
 
   } #filter li {display:inline;} #filter li a {display:block; padding: 10px 15px 8px 0; float:left; text-decoration:none;}
 #search-container {float:right;}
+#searchsubmit{
+  background: url(img/Magnifying_glass_icon.svg) no-repeat;
+    width: 22px;
+    height: 26px;
+    background-size: 20px 20px;
+    border: none;
+    background-position: 0 5px;
+    border-radius: 0px;
+    box-shadow: none;
+    text-indent: 9999px;
+}
 .page-work #filter, .single-works #filter {top:-60px; font-size:1em;}
 
 div.container {padding-top:15px;}

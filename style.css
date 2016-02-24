@@ -127,7 +127,15 @@ section:first-child{ margin-left: 0;  }
 
 
 /* header */
-li.menu-item {}
+nav li:not(:first-child) a:before{
+    content: " | ";
+    padding: 0 13px 0 0;
+    color: #8A8888 !important;
+    font-size: .9em;
+    display: block;
+    float: left;
+    line-height: 1.2;
+}
 header {padding-top:20px; background:#fff; z-index:10;}
 .header-container {z-index:911; width:100%; background:#fff;}
 #header-logo { float:left; margin-right:20px; margin-bottom:10px; 

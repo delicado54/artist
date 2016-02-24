@@ -438,7 +438,7 @@ div.thumb-holder img {position:static; }
 #news-items {width:100%;}
 .texts-grid li {clear:both; width:100%; float:none; }
 .text-thumb-holder {float:left;width:45%; margin-bottom:25px;}
-.text-thumb-holder img {max-width:95%;}
+.text-thumb-holder img {max-width:95% !important;}
  #news-items h3 a {font-size:1em;}
   .blog-sidebar {width:100%;}
   .footer-container {max-width:95%; margin:auto;}

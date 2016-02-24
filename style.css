@@ -424,6 +424,7 @@ div.thumb-holder img {position:static; }
     top: 67px;
   }
   #s {width:120px;}
+  .image-caption {line-height:1.1em; min-height:40px;}
   #socialmedia {padding:5px 0 20px;}
     ul.news {width:100%;}  
   header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{   min-width:300px; max-width:100%;} 

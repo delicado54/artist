@@ -134,7 +134,7 @@ add_action( 'init', 'register_taxonomies', 0 );
 
 add_filter('next_posts_link_attributes', 'posts_link_attributes_1');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes_2');
-add_filter( 'jpeg_quality', create_function( '', 'return 95;' ) );
+add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );
 function posts_link_attributes_1() {
     return 'class="prev-post"';
 }

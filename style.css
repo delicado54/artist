@@ -326,6 +326,9 @@ span.meta {padding-bottom:10px; display:block;}
 .page-news #grid li h3 {font-size:1em;}
 
 /* -------------------- SINGLE WORK PAGE -------------------- */
+.workholder {clear: left;
+    top: -30px;
+    position: relative;}
 article.work {width:70%; float:left;}
 article.work .wp-caption-text {padding-bottom:10px;}
 div.sidebar {width:29%; float:right;}

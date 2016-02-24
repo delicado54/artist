@@ -28,7 +28,7 @@ $sidebarlinks = get_post_meta($post->ID,'sidebarlinks', true);
         <?php endforeach; ?>
         </ul>  
 <?php // endif; ?> 
-<div class="container clearfix">
+<div class="workholder clearfix">
        
             <h1><em><?php the_title(); ?></em></h1>
 <?php // output info line if there is one 

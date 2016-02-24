@@ -2,7 +2,7 @@
         <div class="footer-container"><footer>
            
             <div class="container" id="footer-bottom">               
-                <p>&copy; <?php bloginfo("title"); ?>, <?php echo date('Y'); ?>. All rights reserved</p>
+                <p id="copyright">&copy; <?php bloginfo("title"); ?>, <?php echo date('Y'); ?>. All rights reserved</p>
 <div class="row">
 <div class="column">
 <h4>Site Map</h4>

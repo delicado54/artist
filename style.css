@@ -204,7 +204,8 @@ td {padding:2px 8px 2px 0;}
 
 #footer-bottom {padding-top:40px;font-size:.8em;}
 #socialmedia {float:left; padding:20px 0;}
-.newsletter {float:right; padding:20px 0;}
+.newsletter {float:right; padding:0px 0;}
+#copyright {float:left;}
 /* Grid  */
 .page-work #grid {clear:both; list-style:none; margin:0; padding:0 0 20px 0;}
 .page-work #grid li { display:inline;}

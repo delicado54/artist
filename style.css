@@ -466,6 +466,13 @@ div.thumb-holder {height:auto;}
 @media all and (min-width: 0px) and (max-width: 359px) { 
 header nav li a {font-size:.95em;}
 header nav li ul li a {font-size:.75em; padding:2px 10px 2px 0 ;}
+ #search-container {
+  position: absolute;
+    right: 0px;
+    top: 94px;
+
+  }
+  #s {width:100px;}
 
 
 }

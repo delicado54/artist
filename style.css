@@ -397,9 +397,9 @@ article.nosidebar .inner-wrapper {padding:0;}
 @media all and (min-width: 480px) and (max-width: 748px) { 
   div.sidebar {width:100%; clear:both; padding-top:40px;}
 .texts-grid li {clear:both; width:100%; float:none; }
-.text-thumb-holder {float:left;width:45%; margin-bottom:15px;}
+.text-thumb-holder {float:left;width:45%; margin-bottom:25px;}
 .text-thumb-holder img {max-width:95%;}
-.texts-grid h3 {float:left; width:45%; margin-bottom:15px;}
+.texts-grid h3 {float:left; width:45%; margin-bottom:25px;}
 .texts-grid h3 a {text-decoration:none; font-size:.9em;}
 
 

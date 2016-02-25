@@ -440,7 +440,8 @@ div.thumb-holder img {position:static; }
 .texts-grid li {clear:both; width:100%; float:none; }
 .text-thumb-holder {float:left;width:45%; margin-bottom:25px;}
 .text-thumb-holder img {max-width:95% !important;}
- #news-items h3 a {font-size:0.9em;}
+.texts-grid h3 {float:left; margin-bottom:25px;}
+ #news-items h3 a {font-size:0.75em; display:block; margin-bottom:25px;}
   .blog-sidebar {width:100%;}
   .footer-container {max-width:95%; margin:auto;}
   .newsletter {padding:0;}

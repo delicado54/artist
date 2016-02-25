@@ -212,7 +212,7 @@ td {padding:2px 8px 2px 0;}
 .page-work #grid li a, .page-publications #grid li a {display:block; float:left; width:25%; text-decoration:none; margin-bottom:30px;}
 .page-work #grid img, .page-publications #grid img {max-width:95%;}
 .page-work #grid li h3, .page-publications #grid li h3{ font-size: 1em; }
-.page-work #grid, .page-publications #grid {margin-top:-50px;}
+.page-work #grid {margin-top:-50px;}
 div.thumb-holder {height: 150px; position:relative;}
 div.thumb-holder:hover img {
     filter: alpha(opacity=80);

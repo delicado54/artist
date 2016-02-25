@@ -3,7 +3,7 @@
            
             <div class="container" id="footer-bottom">               
                 <p id="copyright">&copy; <?php bloginfo("title"); ?>, <?php echo date('Y'); ?>. All rights reserved</p>
-<div class="row">
+<div class="row" style="clear:both">
 <div class="column">
 <h4>Site Map</h4>
 <ul><li><a href="/work">Work</a>

@@ -431,6 +431,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 }
 
 /* Mobile Portrait */
+header {padding-top:10px;}
 article.work {width:100%; float:none;}
 @media all and (min-width: 0px) and (max-width: 479px) { 
 div.thumb-holder img {position:static; }

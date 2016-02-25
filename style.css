@@ -207,12 +207,12 @@ td {padding:2px 8px 2px 0;}
 .newsletter {float:right; padding:0px 0;}
 #copyright {float:left;}
 /* Grid  */
-.page-work #grid {clear:both; list-style:none; margin:0; padding:0 0 20px 0;}
-.page-work #grid li { display:inline;}
-.page-work #grid li a {display:block; float:left; width:25%; text-decoration:none; margin-bottom:30px;}
-.page-work #grid img {max-width:95%;}
-.page-work #grid li h3{ font-size: 1em; }
-.page-work #grid {margin-top:-50px;}
+.page-work #grid, .page-publications #grid {clear:both; list-style:none; margin:0; padding:0 0 20px 0;}
+.page-work #grid li, .page-publications #grid li  { display:inline;}
+.page-work #grid li a, .page-publications #grid li a {display:block; float:left; width:25%; text-decoration:none; margin-bottom:30px;}
+.page-work #grid img, .page-publications #grid img {max-width:95%;}
+.page-work #grid li h3, .page-publications #grid li h3{ font-size: 1em; }
+.page-work #grid, .page-publications #grid {margin-top:-50px;}
 div.thumb-holder {height: 150px; position:relative;}
 div.thumb-holder:hover img {
     filter: alpha(opacity=80);
@@ -385,7 +385,7 @@ article.nosidebar .inner-wrapper {padding:0;}
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
   
   img{   max-width: 100%; }
-  #grid li a { width:33%;}
+  .page-home #grid li a, .page-publications #grid li a  { width:33%;}
   
 }
 
@@ -422,7 +422,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 .page-news #grid {width:100%; float:none;}
   .blog-sidebar {width:100%;}
 
-  #grid li a { width:50%;}
+  .page-work #grid li a, .page-publications #grid li a { width:50%;}
   .newsletter {float:none; clear:both;}
   #s {max-width:110px;}
   header nav li ul li a {font-size:.95em; padding:7px 10px 2px 0 ;}
@@ -461,11 +461,11 @@ div.thumb-holder img {position:static; }
   section{   margin: 0 !important; }
   section{  margin-bottom: 20px !important; }
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
-    #grid li a { width:100%;}
+    .page-work #grid li a, .page-publications #grid li a { width:100%;}
 header nav li a {font-size:1.05em;}
 header nav li ul li a {font-size:.85em; padding:5px 10px 2px 0 ;}
-#grid .item h3 {height:auto; overflow:visible;}
-#grid img {max-width:100%;}
+.page-work #grid .item h3, .page-publications #grid .item h3 {height:auto; overflow:visible;}
+.page-work #grid img, .page-publications #grid img {max-width:100%;}
  #filter li a {font-size:0.8em; padding: 10px 10px 0 0;}
  #filter {padding: 0 0 0 0 /*2.5%*/ }
 div.thumb-holder {height:auto;}

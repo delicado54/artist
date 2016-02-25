@@ -450,7 +450,7 @@ div.thumb-holder img {position:static; }
     right: 10px;
     top: 67px;
   }
-  #s {width:120px; border: 1px solid #ccc; border-radius:0; -webkit-appearance:none; height:11px; margin-right:3px;}
+  #s {width:120px; border: 1px solid #ccc; border-radius:0;  height:11px; margin-right:3px;}
   .image-caption {line-height:1.2em; min-height:45px;}
   .bx-prev, .bx-next {top:33%;}
 

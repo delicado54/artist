@@ -450,7 +450,7 @@ div.thumb-holder img {position:static; }
   #search-container {
   position: absolute;
     right: 10px;
-    top: 67px;
+    top: 61px;
     z-index:999999;
   }
   #s {width:120px; border: 1px solid #ccc; border-radius:0; -webkit-appearance:none; height:11px; margin-right:3px;}

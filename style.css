@@ -232,7 +232,7 @@ div.thumb-holder img {position:absolute; bottom:7px;}
 /* news grid */
 #news-items {width:70%; float:left; padding-left:0; list-style:none;}
 #news-items li {clear:both;}
-#news-items li h3 a {text-decoration:none; font-size:1.25em;}
+#news-items li h3 a {text-decoration:none; font-size:1.15em;}
 #grid .item h3 {padding-left:2px; height:50px; overflow:hidden;}
 .news-thumb-holder {float:left; width:40%; margin-bottom:15px;}
 .news-thumb-holder img {max-width:90%;}

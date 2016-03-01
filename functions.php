@@ -157,7 +157,7 @@ function posts_link_attributes_2() {
 add_theme_support('post-thumbnails', array('post','articles','works','publications','texts','home-slide'));
 set_post_thumbnail_size( 208, 150, false );
 add_image_size("artist-thumb",  208, 150, false);
-add_image_size("home-slide", 643, 362, true);
+add_image_size("home-slide", 643, 431, true);
 
 /* ---- Sidebar ---- */
 

@@ -3,12 +3,8 @@ get_header();
 if ( have_posts() ): the_post();
 ?>
 <div class="container clearfix">
-
-
         <article class="post" id="post-<?php the_id(); ?>">
-        
             <h1><?php the_title(); ?></h1>
-
             <span class="meta">Posted <?php the_time('j F Y');  $categories = get_the_category();
 $separator = ' ';
 $output = '';
@@ -19,14 +15,11 @@ if ( ! empty( $categories ) ) {
     }
     echo trim( $output, $separator );
 }?></span>
-
-            <?php the_content(); ?>
-          
+            <?php the_content(); ?>          
         </article>
   <?php include('sidebar.php'); ?>
         
-    </div>
-  
+  <br style="clear:both" />
 </div>
 	
 <?php

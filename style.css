@@ -213,6 +213,7 @@ td {padding:2px 8px 2px 0;}
 .page-work #grid img, .page-publications #grid img {max-width:95%;}
 .page-work #grid li h3, .page-publications #grid li h3{ font-size: 1em; }
 .page-work #grid {margin-top:-50px;}
+.page-publications #grid li a {width:22%; padding-right:3%;}
 div.thumb-holder {height: 150px; position:relative;}
 div.thumb-holder:hover img {
     filter: alpha(opacity=80);
@@ -232,16 +233,16 @@ div.thumb-holder img {position:absolute; bottom:7px;}
 /* news grid */
 #news-items {width:70%; float:left; padding-left:0; list-style:none;}
 #news-items li {clear:both;}
-#news-items li h3 a {text-decoration:none; font-size:1.15em;}
+#news-items li h3 a {text-decoration:none; font-size:.9em;}
 #grid .item h3 {padding-left:2px; height:50px; overflow:hidden;}
 .news-thumb-holder {float:left; width:40%; margin-bottom:15px;}
 .news-thumb-holder img {max-width:90%;}
 .page-texts #grid .item h3 {height:100px; font-size:1em;}
 .texts-grid { list-style:none; padding-left:0; } 
-.texts-grid li {width:50%; float:left; padding-bottom:30px;}
-.text-thumb-holder {float:left;width:45%;}
+.texts-grid li {width:50%; float:left; padding-bottom:30px; min-height:185px;}
+.text-thumb-holder {float:left;width:37%;}
 .text-thumb-holder img {max-width:95%;}
-.texts-grid h3 {float:left; width:45%;}
+.texts-grid h3 {float:left; width:55%;}
 .texts-grid h3 a {text-decoration:none; font-size:.9em;}
 /* ICONS */
 
@@ -383,9 +384,11 @@ article.nosidebar .inner-wrapper {padding:0;}
   #search-container {position:relative;top:40px;}
 
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
-  
+  .texts-grid h3 a {font-size:.8em;}
   img{   max-width: 100%; }
-  .page-home #grid li a, .page-publications #grid li a  { width:33%;}
+  .page-home #grid li a { width:33%;}
+  .page-publications #grid li a { width:30%; padding-right:3%; }
+
   
 }
 
@@ -397,6 +400,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 /* Mobile Landscape */
 @media all and (min-width: 480px) and (max-width: 748px) { 
   div.sidebar {width:100%; clear:both; padding-top:40px;}
+  .texts-grid li {min-height:0;}
 .texts-grid li {clear:both; width:100%; float:none; }
 .text-thumb-holder {float:left;width:45%; margin-bottom:25px;}
 .text-thumb-holder img {max-width:95%;}
@@ -422,7 +426,8 @@ article.nosidebar .inner-wrapper {padding:0;}
 .page-news #grid {width:100%; float:none;}
   .blog-sidebar {width:100%;}
 
-  .page-work #grid li a, .page-publications #grid li a { width:50%;}
+  .page-work #grid li a { width:50%;}
+  .page-publications #grid li a {width:48%; padding-right:2%;}
   .newsletter {float:none; clear:both;}
   #s {max-width:110px;}
   header nav li ul li a {font-size:.95em; padding:7px 10px 2px 0 ;}
@@ -432,6 +437,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 @media all and (max-width: 479px) { 
 /* Mobile Portrait */
 header {padding-top:10px;}
+
 article.work {width:100%; float:none;}
 @media all and (min-width: 0px) and (max-width: 479px) { 
 div.thumb-holder img {position:static; }
@@ -439,7 +445,7 @@ div.thumb-holder img {position:static; }
   div.sidebar {width:100%; clear:both; padding-top:40px;}
 .page-home article.work { width:100%; }
 #news-items {width:100%;}
-.texts-grid li {clear:both; width:100%; float:none; }
+.texts-grid li {clear:both; width:100%; float:none; min-height:0; }
 .text-thumb-holder {float:left;width:45%; margin-bottom:25px;}
 .text-thumb-holder img {max-width:95% !important;}
 .texts-grid h3 {float:left; margin-bottom:25px;}
@@ -465,7 +471,7 @@ div.thumb-holder img {position:static; }
   section{   margin: 0 !important; }
   section{  margin-bottom: 20px !important; }
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
-    .page-work #grid li a, .page-publications #grid li a { width:100%;}
+    .page-work #grid li a, .page-publications #grid li a { width:100%; padding-right:0;}
 header nav li a {font-size:1.05em;}
 header nav li ul li a {font-size:.85em; padding:5px 10px 2px 0 ;}
 .page-work #grid .item h3, .page-publications #grid .item h3 {height:auto; overflow:visible;}

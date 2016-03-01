@@ -3,8 +3,7 @@ get_header();
 if ( have_posts() ): the_post();
 ?>
 <div class="container clearfix">
-       
-    <div class="container clearfix">
+
 
         <article class="post" id="post-<?php the_id(); ?>">
         

@@ -437,11 +437,9 @@ article.nosidebar .inner-wrapper {padding:0;}
 
 
 }
-@media all and (max-width: 479px) { 
-/* Mobile Portrait */
-header {padding-top:10px;}
 
-article.work {width:100%; float:none;}
+  /* Mobile Portrait */
+
 @media all and (min-width: 0px) and (max-width: 479px) { 
 div.thumb-holder img {position:static; }
 .single-post article {float:none; width:100%;}
@@ -485,6 +483,10 @@ div.thumb-holder {height:auto;}
   img{   max-width: 100%; }
     .newsletter {float:none; clear:both;}
   h2.strap {line-height:1.4em;}
+
+header {padding-top:10px;}
+
+article.work {width:100%; float:none;}
 
 }
 

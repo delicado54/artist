@@ -312,7 +312,7 @@ a.btn, button, input[type=submit], input[type=reset]{ padding: 6px; color: #000;
 /* NEWS */
 .prev-post {float:left;}
 .next-post {float:right;}
-.single-post article {float:left; width:75%;}
+.single-post article {float:left; width:73%;}
 span.meta {padding-bottom:10px; display:block;}
 /* SIDEBAR */
 .blog-sidebar {width:23%; float:right; font-size:.85em; color:#aaa;}

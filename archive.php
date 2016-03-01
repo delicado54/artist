@@ -29,7 +29,7 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+<ul id="news-items">
 			<?php
 			// Start the Loop.
 				/*
@@ -54,6 +54,7 @@ get_header(); ?>
 
 		endif;
 		?>
+		</ul>
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
 

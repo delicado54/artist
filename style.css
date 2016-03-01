@@ -237,6 +237,7 @@ div.thumb-holder img {position:absolute; bottom:7px;}
 #grid .item h3 {padding-left:2px; height:50px; overflow:hidden;}
 .news-thumb-holder {float:left; width:40%; margin-bottom:15px;}
 .news-thumb-holder img {max-width:90%;}
+.news-thumb-holder img.portrait-thumb {max-height:300px; width:auto;}
 .page-texts #grid .item h3 {height:100px; font-size:1em;}
 .texts-grid { list-style:none; padding-left:0; } 
 .texts-grid li {width:50%; float:left; padding-bottom:30px; min-height:185px;}
@@ -384,7 +385,7 @@ article.nosidebar .inner-wrapper {padding:0;}
   #search-container {position:relative;top:40px;}
 
   .container.white{ padding: 0; margin: 20px 0; background: transparent; }
-  .texts-grid h3 a {font-size:.8em;}
+  .texts-grid h3 a {font-size:.75em;}
   img{   max-width: 100%; }
   .page-home #grid li a { width:33%;}
   .page-publications #grid li a { width:30%; padding-right:3%; }

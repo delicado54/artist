@@ -381,7 +381,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 /* 748px  */
 @media all and (min-width: 749px) and (max-width: 940px) { 
 
-  header, section.s1, .container, footer, #body-wrapper{  width: 748px; clear: both; margin: 0 auto;  }
+  header, section, .container, footer, #body-wrapper{  width: 748px; clear: both; margin: 0 auto;  }
   section.s2, section.s3, section.s4{  width: 364px; }
   header {margin-top:20px; } 
   #search-container {position:relative;top:40px;}
@@ -417,7 +417,7 @@ article.nosidebar .inner-wrapper {padding:0;}
   .page-home article.work { width:100%; }
 
   #search-container { position:absolute; top:6px; right:20px;}
-  header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 450px;} 
+  header, section, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{  width: 450px;} 
   header {margin-top:10px; }   
   section{   margin: 0 !important; }
   section{  margin-bottom: 20px !important; }
@@ -441,6 +441,8 @@ article.nosidebar .inner-wrapper {padding:0;}
   /* Mobile Portrait */
 
 @media all and (min-width: 0px) and (max-width: 479px) { 
+header, section, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{   min-width:300px; max-width:95%;} 
+
 div.thumb-holder img {position:static; }
 .single-post article {float:none; width:100%;}
   div.sidebar {width:100%; clear:both; padding-top:40px;}
@@ -466,7 +468,6 @@ div.thumb-holder img {position:static; }
 
   #socialmedia {padding:5px 0 20px;}
     ul.news {width:100%;}  
-  header, section.s1, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{   min-width:300px; max-width:100%;} 
  header { max-width:95%; }
   #body-container {width: 95%;}
   section{   margin: 0 !important; }

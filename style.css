@@ -429,7 +429,7 @@ article.nosidebar .inner-wrapper {padding:0;}
 
 
 }
-
+@media all and (max-width: 479px) { 
 /* Mobile Portrait */
 header {padding-top:10px;}
 article.work {width:100%; float:none;}

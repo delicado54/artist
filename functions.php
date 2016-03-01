@@ -19,6 +19,17 @@ function my_embed_oembed_html($html, $url, $attr, $post_id) {
   return '<div class="video-container">' . $html . '</div>';
 }
 
+add_filter( 'get_the_archive_title', function ($title) {
+
+    if ( is_category() ) {
+
+            $title = single_cat_title( '<h1 class="page-title">Subject: ' );       
+
+        }
+
+    return $title;
+
+});
 
 
 function disable_emojicons_tinymce( $plugins ) {

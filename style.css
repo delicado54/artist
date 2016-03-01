@@ -155,7 +155,7 @@ header nav  li.current_page_item > a, header nav li.current_page_ancestor > a, h
 body.single-post li#menu-item-232 > a, body.single-publications li#menu-item-232 > a, body.single-texts li#menu-item-232 > a, body.single-publications #menu-item-235 a, 
 body.single-works li#menu-item-229 a, body.single-texts #menu-item-238 a, body.single-post li#menu-item-300 a{ color: #61d503;   }
 header nav  ul.children li.current_page_item > a, .archiveitem .page-item-47 a, .currentitem .page-item-49 a, #filter li a.active {color:#61d503;}
-ul.children {list-style:disc; margin-left:18px;}
+.blog-sidebar ul.children {list-style:disc; margin-left:18px;}
 .children li {font-size:.8em;}
 .single-post .children {padding: 0 0 5px 10px; }
 .single-post .children li {font-size:1em; }

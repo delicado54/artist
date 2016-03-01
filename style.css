@@ -441,7 +441,7 @@ article.nosidebar .inner-wrapper {padding:0;}
   /* Mobile Portrait */
 
 @media all and (min-width: 0px) and (max-width: 479px) { 
-header, section, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{   min-width:300px; max-width:95%;} 
+header, section, .container, footer, #body-wrapper, section.s2, section.s3, section.s4, article{   min-width:300px; max-width:100%;} 
 
 div.thumb-holder img {position:static; }
 .single-post article {float:none; width:100%;}

@@ -7,7 +7,20 @@ if ( have_posts() ) : the_post();
     <div class="wrapper clearfix">
     
       <?php the_content(); ?>
+<div class="sidebar">
+<h3>Latest Updates</h3>
+<ul class="news">
+<?php 
+$loop = new WP_Query(array('post_type' => 'home-link', 'order' =>'ASC', 'posts_per_page' => 3)); 
 
+ while ($loop->have_posts()) : $loop->the_post();
+
+?><li class="item">
+<a href="<?php echo get_permalink($post->ID); ?>"><h3><em><?php 
+echo $post->post_content;  ?></em></h3></a></li>
+<?php endwhile; ?>      
+      </ul>
+      </div>
       <?php // check if there are any home slides ?>
 <article class="work">      
  <ul class="bxslider">
@@ -21,20 +34,7 @@ $loop = new WP_Query(array('post_type' => 'home-slide', 'order' =>'ASC', 'posts_
 <?php endwhile; ?>
 </ul>
 </article>
-<div class="sidebar">
-<h3>Latest Updates</h3>
-<ul class="news">
-<?php 
-$loop = new WP_Query(array('post_type' => 'home-link', 'order' =>'ASC', 'posts_per_page' => 3)); 
 
- while ($loop->have_posts()) : $loop->the_post();
-
-?><li class="item">
-<a href="<?php echo get_permalink($post->ID); ?>"><h3><em><?php 
-echo $post->post_content;  ?></em></h3></a></li>
-<?php endwhile; ?>	    
-      </ul>
-      </div>
   </div>
               <article class="work home-text">
               <p><?php bloginfo('description'); ?> &#8230; <a href="/about">more</a></p>

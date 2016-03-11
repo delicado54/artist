@@ -189,7 +189,7 @@ h1 {padding-bottom:20px;}
 .wp-caption-text {font-size:.7em;}
 article .wp-caption {width:100% !important; height:auto !important;}
 article img {max-width:100% !important; height:auto !important;}
-.wp-caption img {width:100%; height:auto;}
+.wp-caption img {/*width:100%; height:auto;*/}
 ul.bxslider {padding-left:0;}
 .single-works .container h2 {   font-size: 1em;
     padding-bottom: 15px;
